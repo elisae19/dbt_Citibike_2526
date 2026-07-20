@@ -1,11 +1,9 @@
 version: 2
-
 sources:
-  - name: citibike_dataset
-    database: "{{ target.database }}"
-    schema: "{{ get_citibike_dataset() }}"   # bascule sample (dev) / full (prod) via macros/get_citibike_dataset.sql
+  - name: Citibike_project
+    database: citibike_dataset
     tables:
-      - name: trips_raw
+      - name: "{{ 'Citibike2526' if target.name == 'prod' else 'dev_Citibike2526' }}"
         description: >
           Table brute Citibike NYC, juillet 2025 à juin 2026, concaténation
           des exports mensuels, chargée depuis GCS vers BigQuery.

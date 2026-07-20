@@ -157,3 +157,107 @@
 09:41:55.677166 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
 09:41:55.677364 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
 09:41:55.682506 [info ]: Finished parsing [  0.04s]
+09:44:11.241494 [info ]: Started loading project
+09:44:11.242006 [info ]: Loading ~/.dbt/profiles.yml
+09:44:11.245110 [info ]:    Started resolving packages from packages.yml
+09:44:11.427230 [info ]:   Finished [  0.18s] resolving packages from packages.yml (1 items)
+09:44:11.427388 [debug]:    Started loading packages
+09:44:11.434506 [debug]:     Loaded [  0.01s] packages
+09:44:11.435067 [info ]: Finished loading project [  0.19s]
+09:44:11.435274 [info ]: Started parsing
+09:44:11.468659 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+09:44:11.468896 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+09:44:11.469131 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+09:44:11.469332 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+09:44:11.473728 [info ]: Finished parsing [  0.04s]
+09:44:55.838755 [info ]: Started loading project
+09:44:55.839264 [info ]: Loading ~/.dbt/profiles.yml
+09:44:55.842381 [info ]:    Started resolving packages from packages.yml
+09:44:55.962228 [info ]:   Finished [  0.12s] resolving packages from packages.yml (1 items)
+09:44:55.962377 [debug]:    Started loading packages
+09:44:55.969411 [debug]:     Loaded [  0.01s] packages
+09:44:55.969956 [info ]: Finished loading project [  0.13s]
+09:44:55.970160 [info ]: Started parsing
+09:44:56.002377 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+09:44:56.002608 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+09:44:56.002838 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+09:44:56.003032 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+09:44:56.007275 [info ]: Finished parsing [  0.04s]
+09:45:22.648663 [info ]: Started loading project
+09:45:22.649181 [info ]: Loading ~/.dbt/profiles.yml
+09:45:22.653031 [info ]:    Started resolving packages from packages.yml
+09:45:22.841367 [info ]:   Finished [  0.19s] resolving packages from packages.yml (1 items)
+09:45:22.841580 [debug]:    Started loading packages
+09:45:22.848614 [debug]:     Loaded [  0.01s] packages
+09:45:22.849185 [info ]: Finished loading project [  0.20s]
+09:45:22.849396 [info ]: Started parsing
+09:45:22.883527 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+09:45:22.883763 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+09:45:22.884003 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+09:45:22.884205 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+09:45:22.890949 [info ]: Finished parsing [  0.04s]
+09:49:44.967018 [info ]: Started loading project
+09:49:44.967704 [info ]: Loading ~/.dbt/profiles.yml
+09:49:44.971251 [info ]:    Started resolving packages from packages.yml
+09:49:45.191450 [info ]:   Finished [  0.22s] resolving packages from packages.yml (1 items)
+09:49:45.191624 [debug]:    Started loading packages
+09:49:45.199298 [debug]:     Loaded [  0.01s] packages
+09:49:45.199921 [info ]: Finished loading project [  0.23s]
+09:49:45.200136 [info ]: Started parsing
+09:49:45.234841 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+09:49:45.235073 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+09:49:45.235314 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+09:49:45.235516 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+09:49:45.240078 [info ]: Finished parsing [  0.04s]
+09:49:47.608278 [info ]: Started loading project
+09:49:47.608716 [info ]: Loading ~/.dbt/profiles.yml
+09:49:47.611826 [info ]:    Started resolving packages from packages.yml
+09:49:47.758424 [info ]:   Finished [  0.15s] resolving packages from packages.yml (1 items)
+09:49:47.758573 [debug]:    Started loading packages
+09:49:47.765808 [debug]:     Loaded [  0.01s] packages
+09:49:47.766436 [info ]: Finished loading project [  0.16s]
+09:49:47.766673 [info ]: Started parsing
+09:49:47.801070 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+09:49:47.801293 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+09:49:47.801541 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+09:49:47.801743 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+09:49:47.806164 [info ]: Finished parsing [  0.04s]
+09:49:48.948703 [info ]: Started loading project
+09:49:48.949166 [info ]: Loading ~/.dbt/profiles.yml
+09:49:48.952614 [info ]:    Started resolving packages from packages.yml
+09:49:49.112981 [info ]:   Finished [  0.16s] resolving packages from packages.yml (1 items)
+09:49:49.113127 [debug]:    Started loading packages
+09:49:49.120031 [debug]:     Loaded [  0.01s] packages
+09:49:49.120574 [info ]: Finished loading project [  0.17s]
+09:49:49.120779 [info ]: Started parsing
+09:49:49.153830 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+09:49:49.154068 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+09:49:49.154330 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+09:49:49.154525 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+09:49:49.158670 [info ]: Finished parsing [  0.04s]
+09:52:51.844965 [info ]: Started loading project
+09:52:51.845511 [info ]: Loading ~/.dbt/profiles.yml
+09:52:51.848559 [info ]:    Started resolving packages from packages.yml
+09:52:52.045556 [info ]:   Finished [  0.20s] resolving packages from packages.yml (1 items)
+09:52:52.045709 [debug]:    Started loading packages
+09:52:52.053337 [debug]:     Loaded [  0.01s] packages
+09:52:52.053981 [info ]: Finished loading project [  0.21s]
+09:52:52.054199 [info ]: Started parsing
+09:52:52.089311 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+09:52:52.089556 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+09:52:52.089783 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+09:52:52.089978 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+09:52:52.094741 [info ]: Finished parsing [  0.04s]
+09:52:59.133968 [info ]: Started loading project
+09:52:59.134428 [info ]: Loading ~/.dbt/profiles.yml
+09:52:59.137338 [info ]:    Started resolving packages from packages.yml
+09:52:59.263360 [info ]:   Finished [  0.13s] resolving packages from packages.yml (1 items)
+09:52:59.263530 [debug]:    Started loading packages
+09:52:59.271128 [debug]:     Loaded [  0.01s] packages
+09:52:59.271729 [info ]: Finished loading project [  0.14s]
+09:52:59.271943 [info ]: Started parsing
+09:52:59.305580 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+09:52:59.305802 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+09:52:59.306039 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+09:52:59.306241 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+09:52:59.311142 [info ]: Finished parsing [  0.04s]

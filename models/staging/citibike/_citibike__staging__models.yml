@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_citibike__trips
+    description: Trajets Citibike nettoyés et retypés, une ligne par trajet.
+    columns:
+      - name: ride_id
+        tests:
+          - unique
+          - not_null
+      - name: rideable_type
+        tests:
+          - accepted_values:
+              values: ['classic_bike', 'electric_bike', 'docked_bike']
+      - name: rider_type
+        tests:
+          - accepted_values:
+              values: ['member', 'casual']
+      - name: started_at
+        tests:
+          - not_null
+      - name: ended_at
+        tests:
+          - not_null
+      - name: start_lat
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 40.4
+              max_value: 41.0
+      - name: end_lat
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 40.4
+              max_value: 41.0

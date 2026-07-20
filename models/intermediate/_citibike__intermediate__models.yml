@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: int_citibike__trips_enriched
+    description: Trajets dédupliqués, enrichis (durée, distance, calendrier) et filtrés des aberrations.
+    columns:
+      - name: ride_id
+        tests:
+          - unique
+          - not_null
+      - name: trip_duration_minutes
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              max_value: 1440
+      - name: start_station_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('int_citibike__stations_unified')
+              field: station_id
+
+  - name: int_citibike__stations_unified
+    description: Dimension station dédupliquée (une ligne par station_id).
+    columns:
+      - name: station_id
+        tests:
+          - unique
+          - not_null

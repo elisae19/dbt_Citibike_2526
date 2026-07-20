@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: citibike_dataset
+    database: "{{ target.database }}"
+    schema: "{{ get_citibike_dataset() }}"   # bascule sample (dev) / full (prod) via macros/get_citibike_dataset.sql
+    tables:
+      - name: trips_raw
+        description: >
+          Table brute Citibike NYC, juillet 2025 à juin 2026, concaténation
+          des exports mensuels, chargée depuis GCS vers BigQuery.
+        loaded_at_field: started_at
+        freshness:
+          warn_after: {count: 45, period: day}
+          error_after: {count: 60, period: day}
+        columns:
+          - name: ride_id
+            description: Identifiant unique du trajet.
+            tests:
+              - unique
+              - not_null
+          - name: started_at
+            tests:
+              - not_null
+          - name: ended_at
+            tests:
+              - not_null
+          - name: member_casual
+            tests:
+              - accepted_values:
+                  values: ['member', 'casual']
+          - name: rideable_type
+            tests:
+              - accepted_values:
+                  values: ['classic_bike', 'electric_bike', 'docked_bike']

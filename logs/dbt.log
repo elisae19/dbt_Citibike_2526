@@ -1,0 +1,66 @@
+[0m11:28:32.806849 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:28:32.861304 | e4ae26c5-cd44-48da-b235-95221d0fafd7 ==============================
+[0m11:28:32.861304 [info ] [MainThread]: Running with dbt=1.11.12
+[0m11:28:32.861828 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Elisa\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\Elisa\\Documents\\Portfolio project\\CITIBIKE2526\\CLAUDE dbt_citibike_project\\dbt_citibike\\logs'}
+[0m11:28:33.000877 [debug] [MainThread]: Set downloads directory='C:\Users\Elisa\AppData\Local\Temp\dbt-downloads-38sxmmhb'
+[0m11:28:33.001661 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m11:28:33.433154 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m11:28:33.433154 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m11:28:33.751994 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m11:28:33.761263 [info ] [MainThread]: Updating lock file in file path: C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike/package-lock.yml
+[0m11:28:33.771991 [debug] [MainThread]: Set downloads directory='C:\Users\Elisa\AppData\Local\Temp\dbt-downloads-lzju39lo'
+[0m11:28:33.776003 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m11:28:34.651078 [info ] [MainThread]: Installed from version 1.4.1
+[0m11:28:34.651078 [info ] [MainThread]: Up to date!
+[0m11:28:34.651078 [debug] [MainThread]: Command `cli deps` succeeded at 11:28:34.651078 after 1.91 seconds
+[0m11:28:34.651078 [debug] [MainThread]: Flushing usage events
+[0m11:32:28.689978 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:32:28.741112 | 95b5e226-4f0b-4c6e-a582-fbdea7fc4967 ==============================
+[0m11:32:28.741112 [info ] [MainThread]: Running with dbt=1.11.12
+[0m11:32:28.741865 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Elisa\\.dbt', 'invocation_command': 'dbt ', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\Elisa\\Documents\\Portfolio project\\CITIBIKE2526\\CLAUDE dbt_citibike_project\\dbt_citibike\\logs'}
+[0m11:32:28.941847 [debug] [MainThread]: Set downloads directory='C:\Users\Elisa\AppData\Local\Temp\dbt-downloads-r7btct3v'
+[0m11:32:28.941847 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m11:32:29.289321 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m11:32:29.290324 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m11:32:29.590389 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m11:32:29.592643 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m11:32:30.434558 [info ] [MainThread]: Installed from version 1.4.1
+[0m11:32:30.434558 [info ] [MainThread]: Up to date!
+[0m11:32:30.434558 [debug] [MainThread]: Command `cli deps` succeeded at 11:32:30.434558 after 1.80 seconds
+[0m11:32:30.434558 [debug] [MainThread]: Flushing usage events
+[0m11:40:43.060033 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:40:43.109573 | fd45c537-ee93-433c-83be-8d5249124361 ==============================
+[0m11:40:43.109573 [info ] [MainThread]: Running with dbt=1.11.12
+[0m11:40:43.109573 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Elisa\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Elisa\\Documents\\Portfolio project\\CITIBIKE2526\\CLAUDE dbt_citibike_project\\dbt_citibike\\logs'}
+[0m11:40:46.149439 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m11:40:46.650654 [debug] [MainThread]: checksum: f368f5348cf42803b94ef7fb8257ecf3bf9a9a16dd9c8c51fe5172f2dbeb457f, vars: {}, profile: , target: , version: 1.11.12
+[0m11:40:46.650654 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:40:46.665024 [warn ] [MainThread]: [[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `freshness` as a top-level property of `sources[0].tables[0]` in file
+`models\staging\citibike\_citibike__sources.yml`. The `freshness` top-level
+property should be moved into the `config` of `sources[0].tables[0]`.
+[0m11:40:48.191828 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `dbt_utils.accepted_range` defined on
+'int_citibike__trips_enriched' in package 'citibike_dbt_2526'
+(models\intermediate\_citibike__intermediate__models.yml). Arguments to generic
+tests should be nested under the `arguments` property.
+[0m11:40:48.248227 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Could not render {{ get_citibike_dataset() }}: 'get_citibike_dataset' is undefined
+[0m11:40:48.248227 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 2 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 5 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m11:40:48.248227 [debug] [MainThread]: Command `dbt run` failed at 11:40:48.248227 after 5.26 seconds
+[0m11:40:48.248227 [debug] [MainThread]: Flushing usage events

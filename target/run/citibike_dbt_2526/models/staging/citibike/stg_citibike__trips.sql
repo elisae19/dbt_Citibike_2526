@@ -1,12 +1,12 @@
-{{
-    config(
-        materialized='view'
-    )
-}}
+
+
+  create or replace view `local-tempo-493308-m1`.`citibike_dataset`.`stg_citibike__trips`
+  OPTIONS()
+  as 
 
 with source as (
 
-    select * from {{ source('citibike_dbt_2526', 'dev_Citibike2526') }}
+    select * from `local-tempo-493308-m1`.`citibike_dataset`.`dev_Citibike2526`
 
 ),
 
@@ -34,4 +34,5 @@ renamed as (
 
 )
 
-select * from renamed
+select * from renamed;
+

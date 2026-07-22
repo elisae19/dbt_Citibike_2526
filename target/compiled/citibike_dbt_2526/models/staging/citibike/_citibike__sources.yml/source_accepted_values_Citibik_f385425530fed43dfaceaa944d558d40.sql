@@ -1,0 +1,22 @@
+
+    
+    
+
+with all_values as (
+
+    select
+        rideable_type as value_field,
+        count(*) as n_records
+
+    from `local-tempo-493308-m1`.`citibike_dataset`.`dev_Citibike2526`
+    group by rideable_type
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'classic_bike','electric_bike','docked_bike'
+)
+
+

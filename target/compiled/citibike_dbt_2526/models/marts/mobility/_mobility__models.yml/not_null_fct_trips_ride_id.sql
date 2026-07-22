@@ -1,0 +1,11 @@
+
+    
+    
+
+
+
+select ride_id
+from `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips`
+where ride_id is null
+
+

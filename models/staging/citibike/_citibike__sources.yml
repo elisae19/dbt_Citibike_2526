@@ -1,16 +1,17 @@
 version: 2
 sources:
-  - name: Citibike_project
-    database: citibike_dataset
+  - name: citibike_dbt_2526
+    database: local-tempo-493308-m1 
+    schema: citibike_dataset
     tables:
       - name: "{{ 'Citibike2526' if target.name == 'prod' else 'dev_Citibike2526' }}"
         description: >
           Table brute Citibike NYC, juillet 2025 à juin 2026, concaténation
           des exports mensuels, chargée depuis GCS vers BigQuery.
-        loaded_at_field: started_at
-        freshness:
-          warn_after: {count: 45, period: day}
-          error_after: {count: 60, period: day}
+        #loaded_at_field: started_at
+        #freshness:
+        #  warn_after: {count: 45, period: day}
+        #  error_after: {count: 60, period: day}
         columns:
           - name: ride_id
             description: Identifiant unique du trajet.

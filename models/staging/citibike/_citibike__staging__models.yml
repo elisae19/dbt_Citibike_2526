@@ -12,7 +12,7 @@ models:
         tests:
           - accepted_values:
               values: ['classic_bike', 'electric_bike', 'docked_bike']
-      - name: rider_type
+      - name: member_type
         tests:
           - accepted_values:
               values: ['member', 'casual']

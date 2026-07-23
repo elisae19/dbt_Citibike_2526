@@ -2,11 +2,11 @@
     config(
         materialized='table',
         partition_by={
-            "field": "started_at",
-            "data_type": "timestamp",
-            "granularity": "month"
+            'field': 'started_at',
+            'data_type': 'timestamp',
+            'granularity': 'month'
         },
-        cluster_by=["start_station_id", "rider_type"]
+        cluster_by=['start_station_id', 'member_type']
     )
 }}
 

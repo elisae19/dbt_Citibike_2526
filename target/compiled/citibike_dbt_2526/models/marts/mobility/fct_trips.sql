@@ -3,7 +3,7 @@
 select
     ride_id,
     rideable_type,
-    rider_type,
+    member_type,
 
     started_at,
     ended_at,
@@ -20,3 +20,5 @@ select
 
 from `local-tempo-493308-m1`.`citibike_dataset`.`int_citibike__trips_enriched`
 
+
+where started_at > (select max(started_at) from `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips`)

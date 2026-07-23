@@ -7,14 +7,14 @@
             "data_type": "timestamp",
             "granularity": "month"
         },
-        cluster_by=["start_station_id", "rider_type"]
+        cluster_by=["start_station_id", "member_type"]
     )
 }}
 
 select
     ride_id,
     rideable_type,
-    rider_type,
+    member_type,
 
     started_at,
     ended_at,

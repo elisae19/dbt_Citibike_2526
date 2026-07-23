@@ -5,7 +5,7 @@
     create or replace table `local-tempo-493308-m1`.`citibike_dataset`.`int_citibike__trips_enriched`
       
     partition by timestamp_trunc(started_at, month)
-    cluster by start_station_id, rider_type
+    cluster by start_station_id, member_type
 
     
     OPTIONS()
@@ -14,9 +14,9 @@
 
 with  __dbt__cte__int_citibike__trips_deduplicated as (
 
-
--- Les exports mensuels concaténés peuvent se chevaucher sur les bornes
--- de date : on garde une seule ligne par ride_id.
+-- Ce modèle ne crée pas de table , il est utilisé pour dédupliquer les trajets en cas de doublons dans la source.
+-- on garde la première ligne (la plus ancienne) par ride_id au cas où il y aurait des doublons
+-- ensuite ce modèle filtré sera utilisé par int_citibike__stations_unified et int_citibike__trips_enriched
 
 with trips as (
 
@@ -34,6 +34,14 @@ deduplicated as (
         ) as rn
 
     from trips
+
+),
+
+-- La CTE suivante n'est pas utilisée dans le modèle final, elle sert juste à tester qu'il n'y a pas de doublons
+deduplicate_test as (
+
+    select * from deduplicated
+    where rn > 1
 
 )
 

@@ -3,7 +3,7 @@
 select
     date(started_at)     as trip_date,
     rideable_type,
-    rider_type,
+    member_type,
     day_type,
 
     count(*)                            as nb_trips,

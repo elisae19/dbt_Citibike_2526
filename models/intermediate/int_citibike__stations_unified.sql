@@ -3,11 +3,10 @@
         materialized='table'
     )
 }}
+-- Regroupement des stations de départ et d'arrivée pour obtenir une seule ligne par station.
 
--- Une station apparaît à la fois en start et en end : on unifie pour
--- obtenir une seule ligne par station, avec les coordonnées les plus
--- récentes observées (les stations peuvent légèrement dériver en lat/lng
--- au fil des rééquilibrages de flotte).
+-- Au fil du temps, les stations peuvent légèrement dériver en lat/lng pour une même station_id (ex: 40.750, -73.993 vs 40.751, -73.992)
+-- on prend alors l'observation la plus récente pour chaque station_id
 
 with starts as (
 
@@ -43,6 +42,7 @@ unioned as (
 
 ),
 
+-- ranked permet de garder la dernière observation pour chaque station_id
 ranked as (
 
     select

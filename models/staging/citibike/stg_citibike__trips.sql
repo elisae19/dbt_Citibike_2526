@@ -15,9 +15,9 @@ renamed as (
     select
         ride_id,
         rideable_type,
-        member_casual                          as rider_type,
+        member_casual                          as member_type,
 
-        cast(started_at as timestamp)          as started_at,
+        safe_cast(started_at as timestamp)          as started_at,
         cast(ended_at as timestamp)            as ended_at,
 
         start_station_id                       as start_station_id,

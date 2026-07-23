@@ -55,13 +55,15 @@ enriched as (
         end as day_type,
 
         -- distance haversine approximative en km
-        2 * 6371 * asin(
-            sqrt(
-                pow(sin((radians(end_lat) - radians(start_lat)) / 2), 2) +
-                cos(radians(start_lat)) * cos(radians(end_lat)) *
-                pow(sin((radians(end_lng) - radians(start_lng)) / 2), 2)
-            )
-        ) as distance_km
+        
+
+
+
+    
+
+    2 * 3961 * asin(sqrt(power(sin((acos(-1) * end_lat / 180 - acos(-1) * start_lat / 180) / 2), 2) +
+    cos(acos(-1) * start_lat / 180) * cos(acos(-1) * end_lat / 180) *
+    power(sin((acos(-1) * end_lng / 180 - acos(-1) * start_lng / 180) / 2), 2))) * 1.60934 as distance_km
 
     from trips
 

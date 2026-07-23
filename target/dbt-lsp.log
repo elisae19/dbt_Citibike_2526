@@ -12219,3 +12219,1598 @@ FROM
 11:37:35.363312 [info ]: Started scheduling
 11:37:35.363360 [info ]: Finished scheduling [  0.00s]
 11:37:35.364131 [info ]: Cached model count updated: 8 models (accurate)
+11:40:45.304372 [info ]: Started loading project
+11:40:45.304932 [info ]: Loading ~/.dbt/profiles.yml
+11:40:45.313256 [info ]: Finished loading project [  0.01s]
+11:40:45.320854 [info ]: Waiting for lease on 'target' directory
+11:40:45.717541 [info ]: Loading ~/.dbt/profiles.yml
+11:40:45.889552 [info ]: Started loading project
+11:40:45.890041 [info ]: Loading ~/.dbt/profiles.yml
+11:40:45.893368 [info ]:    Started resolving packages from packages.yml
+11:40:46.103277 [info ]:   Finished [  0.21s] resolving packages from packages.yml (1 items)
+11:40:46.103491 [debug]:    Started loading packages
+11:40:46.116259 [debug]:     Loaded [  0.01s] packages
+11:40:46.117361 [info ]: Finished loading project [  0.23s]
+11:40:46.117780 [info ]: Started parsing
+11:40:46.175688 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+11:40:46.175939 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+11:40:46.176174 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+11:40:46.176389 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+11:40:46.177755 [debug]: Finished parsing models\intermediate\int_citibike__stations_unified.sql [  0.00s]
+11:40:46.178458 [debug]: Finished parsing models\intermediate\int_citibike__trips_deduplicated.sql [  0.00s]
+11:40:46.179034 [debug]: Finished parsing models\intermediate\int_citibike__trips_enriched.sql [  0.00s]
+11:40:46.179586 [debug]: Finished parsing models\marts\mobility\agg_trips_by_station_hour.sql [  0.00s]
+11:40:46.180041 [debug]: Finished parsing models\marts\mobility\agg_trips_daily.sql [  0.00s]
+11:40:46.180512 [debug]: Finished parsing models\marts\mobility\dim_stations.sql [  0.00s]
+11:40:46.181120 [debug]: Finished parsing models\marts\mobility\fct_trips.sql [  0.00s]
+11:40:46.182991 [debug]: Finished parsing models\staging\citibike\stg_citibike__trips.sql [  0.00s]
+11:40:46.191674 [info ]: Finished parsing [  0.07s]
+11:40:46.216589 [info ]: Cached model count updated: 8 models (estimate)
+11:40:46.216610 [info ]: Cached model count updated: 8 models (accurate)
+11:40:46.216653 [info ]: Started scheduling
+11:40:46.216697 [info ]: Finished scheduling [  0.00s]
+11:40:46.216713 [debug]: Compilation - 0 nodes selected: {}
+11:40:46.216738 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+11:40:46.216754 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:40:46.216762 [info ]: Started scheduling
+11:40:46.216850 [info ]: Finished scheduling [  0.00s]
+11:40:46.217528 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "local-tempo-493308-m1", schema: "citibike_dataset", table: "dev_Citibike2526" }) and interval: None
+11:40:46.219362 [info ]: Started deferring state
+11:40:46.219384 [info ]: Finished deferring state [  0.00s]
+11:40:46.274264 [info ]: Started building task graph
+11:40:46.274296 [info ]: Finished building task graph [  0.00s]
+11:40:46.288747 [info ]: Started scheduling
+11:40:46.288801 [info ]: Finished scheduling [  0.00s]
+11:40:46.289666 [info ]: Cached model count updated: 8 models (accurate)
+11:40:46.309502 [info ]: Waiting for lease on 'target' directory
+11:40:46.432345 [info ]: Started loading project
+11:40:46.433063 [info ]: Loading ~/.dbt/profiles.yml
+11:40:46.471241 [info ]: Cached model count updated: 8 models (estimate)
+11:40:46.471265 [info ]: Cached model count updated: 8 models (accurate)
+11:40:46.471310 [info ]: Started scheduling
+11:40:46.471386 [info ]: Finished scheduling [  0.00s]
+11:40:46.471402 [debug]: Compilation - 0 nodes selected: {}
+11:40:46.471423 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+11:40:46.471436 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:40:46.472993 [info ]: Started deferring state
+11:40:46.473016 [info ]: Finished deferring state [  0.00s]
+11:40:46.514840 [info ]: Started building task graph
+11:40:46.514865 [info ]: Finished building task graph [  0.00s]
+11:40:46.524409 [info ]: Started scheduling
+11:40:46.524456 [info ]: Finished scheduling [  0.00s]
+11:40:46.524569 [info ]: Finished loading project [  0.09s]
+11:40:46.525045 [info ]: Cached model count updated: 8 models (accurate)
+11:40:46.527090 [info ]: Waiting for lease on 'target' directory
+11:40:46.976888 [info ]: Started loading project
+11:40:46.977557 [info ]: Loading ~/.dbt/profiles.yml
+11:40:47.000238 [info ]: Cached model count updated: 8 models (estimate)
+11:40:47.000257 [info ]: Cached model count updated: 8 models (accurate)
+11:40:47.000298 [info ]: Started scheduling
+11:40:47.000346 [info ]: Finished scheduling [  0.00s]
+11:40:47.000360 [debug]: Compilation - 0 nodes selected: {}
+11:40:47.000379 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+11:40:47.000389 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:40:47.001435 [info ]: Started deferring state
+11:40:47.001454 [info ]: Finished deferring state [  0.00s]
+11:40:47.041104 [info ]: Started building task graph
+11:40:47.041135 [info ]: Finished building task graph [  0.00s]
+11:40:47.058168 [info ]: Started scheduling
+11:40:47.058227 [info ]: Finished scheduling [  0.00s]
+11:40:47.058371 [info ]: Finished loading project [  0.08s]
+11:40:47.059196 [info ]: Cached model count updated: 8 models (accurate)
+11:40:47.061251 [info ]: Waiting for lease on 'target' directory
+11:40:47.511759 [info ]: Started loading project
+11:40:47.512434 [info ]: Loading ~/.dbt/profiles.yml
+11:40:47.536991 [info ]: Cached model count updated: 8 models (estimate)
+11:40:47.537010 [info ]: Cached model count updated: 8 models (accurate)
+11:40:47.537054 [info ]: Started scheduling
+11:40:47.537104 [info ]: Finished scheduling [  0.00s]
+11:40:47.537118 [debug]: Compilation - 0 nodes selected: {}
+11:40:47.537140 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+11:40:47.537151 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+11:40:47.538210 [info ]: Started deferring state
+11:40:47.538228 [info ]: Finished deferring state [  0.00s]
+11:40:47.574882 [info ]: Started building task graph
+11:40:47.574911 [info ]: Finished building task graph [  0.00s]
+11:40:47.584949 [info ]: Started scheduling
+11:40:47.584998 [info ]: Finished scheduling [  0.00s]
+11:40:47.585099 [info ]: Finished loading project [  0.07s]
+11:40:47.585726 [info ]: Cached model count updated: 8 models (accurate)
+11:40:49.135891 [info ]: Started loading project
+11:40:49.136337 [info ]: Loading ~/.dbt/profiles.yml
+11:40:49.158180 [info ]: Cached model count updated: 8 models (estimate)
+11:40:49.158202 [info ]: Cached model count updated: 8 models (accurate)
+11:40:49.158250 [info ]: Started scheduling
+11:40:49.158327 [info ]: Finished scheduling [  0.00s]
+11:40:49.158343 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+11:40:49.159430 [info ]: Started deferring state
+11:40:49.159454 [info ]: Finished deferring state [  0.00s]
+11:40:49.159590 [debug]:    Started downloading relations (1 items)
+11:40:49.159639 [info ]: Finished loading project [  0.02s]
+11:40:53.304800 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+11:40:53.304943 [debug]:   Finished [  4.15s] downloading relations (1 items)
+11:40:53.336572 [info ]: Started building task graph
+11:40:53.336653 [info ]: Finished building task graph [  0.00s]
+11:40:53.342954 [info ]: Started rendering (8 nodes)
+11:40:53.342977 [info ]: Started model citibike_dataset.dim_stations
+11:40:53.342992 [debug]: Started rendering model citibike_dataset.dim_stations
+11:40:53.343020 [info ]: Started model citibike_dataset.agg_trips_daily
+11:40:53.343030 [debug]: Started rendering model citibike_dataset.agg_trips_daily
+11:40:53.343043 [info ]: Started model citibike_dataset.agg_trips_by_station_hour
+11:40:53.343053 [debug]: Started rendering model citibike_dataset.agg_trips_by_station_hour
+11:40:53.343064 [info ]: Started model citibike_dataset.fct_trips
+11:40:53.343071 [debug]: Started rendering model citibike_dataset.fct_trips
+11:40:53.343083 [info ]: Started model citibike_dataset.int_citibike__trips_deduplicated
+11:40:53.343090 [debug]: Started rendering model citibike_dataset.int_citibike__trips_deduplicated
+11:40:53.343103 [info ]: Started model citibike_dataset.stg_citibike__trips
+11:40:53.343114 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+11:40:53.348055 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+11:40:53.348304 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_deduplicated at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_deduplicated.sql
+11:40:53.349437 [debug]: Finished rendering [  0.01s] model citibike_dataset.stg_citibike__trips [success]
+11:40:53.349481 [info ]: Started analyzing (8 nodes)
+11:40:53.349494 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+11:40:53.349516 [debug]: Finished rendering [  0.01s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+11:40:53.349527 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_deduplicated
+11:40:53.349549 [info ]: Started model citibike_dataset.int_citibike__trips_enriched
+11:40:53.349573 [debug]: Started rendering model citibike_dataset.int_citibike__trips_enriched
+11:40:53.349594 [info ]: Started model citibike_dataset.int_citibike__stations_unified
+11:40:53.349604 [debug]: Started rendering model citibike_dataset.int_citibike__stations_unified
+11:40:53.349998 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+11:40:53.350014 [info ]:  Succeeded [  0.01s] model citibike_dataset.stg_citibike__trips (view)
+11:40:53.350034 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+11:40:53.350043 [info ]:  Succeeded [  0.01s] model citibike_dataset.int_citibike__trips_deduplicated (ephemeral)
+11:40:53.359777 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__stations_unified at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__stations_unified.sql
+11:40:53.361139 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_enriched at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+11:40:53.361588 [debug]: Finished rendering [  0.01s] model citibike_dataset.int_citibike__stations_unified [success]
+11:40:53.361624 [debug]: Started analyzing model citibike_dataset.int_citibike__stations_unified
+11:40:53.362176 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+11:40:53.362192 [info ]:  Succeeded [  0.01s] model citibike_dataset.int_citibike__stations_unified (table)
+11:40:53.362301 [debug]: Finished rendering [  0.01s] model citibike_dataset.int_citibike__trips_enriched [success]
+11:40:53.362318 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_enriched
+11:40:53.364465 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+11:40:53.364492 [info ]:  Succeeded [  0.01s] model citibike_dataset.int_citibike__trips_enriched (table)
+11:40:53.365750 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_daily at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_daily.sql
+11:40:53.367484 [debug]: Finished rendering [  0.02s] model citibike_dataset.agg_trips_daily [success]
+11:40:53.367527 [debug]: Started analyzing model citibike_dataset.agg_trips_daily
+11:40:53.367861 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_daily [success]
+11:40:53.367875 [info ]:  Succeeded [  0.02s] model citibike_dataset.agg_trips_daily (table)
+11:40:53.374210 [debug]: Compiled SQL for node model.citibike_dbt_2526.dim_stations at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\dim_stations.sql
+11:40:53.374329 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_by_station_hour at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_by_station_hour.sql
+11:40:53.374572 [debug]: Finished rendering [  0.03s] model citibike_dataset.agg_trips_by_station_hour [success]
+11:40:53.374603 [debug]: Started analyzing model citibike_dataset.agg_trips_by_station_hour
+11:40:53.374700 [debug]: Finished rendering [  0.03s] model citibike_dataset.dim_stations [success]
+11:40:53.374724 [debug]: Started analyzing model citibike_dataset.dim_stations
+11:40:53.374897 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+11:40:53.375015 [info ]:  Succeeded [  0.03s] model citibike_dataset.agg_trips_by_station_hour (table)
+11:40:53.375163 [debug]: Compiled SQL for node model.citibike_dbt_2526.fct_trips at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+11:40:53.375275 [debug]: Finished rendering [  0.03s] model citibike_dataset.fct_trips [success]
+11:40:53.375292 [info ]: Finished rendering [  0.03s] (8 nodes, 0 skipped, 0 errors)
+11:40:53.375306 [debug]: Started analyzing model citibike_dataset.fct_trips
+11:40:53.375460 [debug]: Finished analyzing [  0.00s] model citibike_dataset.fct_trips [success]
+11:40:53.375474 [info ]:  Succeeded [  0.03s] model citibike_dataset.fct_trips (incremental)
+11:40:53.376937 [debug]: Finished analyzing [  0.00s] model citibike_dataset.dim_stations [success]
+11:40:53.376965 [info ]: Finished analyzing [  0.03s] (8 nodes, 0 skipped, 0 errors)
+11:40:53.376977 [info ]:  Succeeded [  0.03s] model citibike_dataset.dim_stations (table)
+11:40:53.381430 [info ]: Started scheduling
+11:40:53.381490 [info ]: Finished scheduling [  0.00s]
+11:40:53.382509 [info ]: Cached model count updated: 8 models (accurate)
+12:34:14.343972 [info ]: Started loading project
+12:34:14.344871 [info ]: Loading ~/.dbt/profiles.yml
+12:34:14.374902 [info ]: Cached model count updated: 8 models (estimate)
+12:34:14.374929 [info ]: Cached model count updated: 8 models (accurate)
+12:34:14.374996 [info ]: Started scheduling
+12:34:14.375128 [info ]: Finished scheduling [  0.00s]
+12:34:14.375153 [debug]: Compilation - 0 nodes selected: {}
+12:34:14.375200 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+12:34:14.375222 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+12:34:14.376478 [info ]: Started deferring state
+12:34:14.376517 [info ]: Finished deferring state [  0.00s]
+12:34:14.412011 [info ]: Started building task graph
+12:34:14.412072 [info ]: Finished building task graph [  0.00s]
+12:34:14.423542 [info ]: Started scheduling
+12:34:14.423588 [info ]: Finished scheduling [  0.00s]
+12:34:14.423731 [info ]: Finished loading project [  0.08s]
+12:34:14.424155 [info ]: Cached model count updated: 8 models (accurate)
+12:34:16.035048 [info ]: Started loading project
+12:34:16.035533 [info ]: Loading ~/.dbt/profiles.yml
+12:34:16.059748 [info ]: Cached model count updated: 8 models (estimate)
+12:34:16.059767 [info ]: Cached model count updated: 8 models (accurate)
+12:34:16.059794 [info ]: Started scheduling
+12:34:16.059880 [info ]: Finished scheduling [  0.00s]
+12:34:16.059893 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+12:34:16.060997 [info ]: Started deferring state
+12:34:16.061019 [info ]: Finished deferring state [  0.00s]
+12:34:16.061166 [debug]:    Started downloading relations (1 items)
+12:34:16.061237 [info ]: Finished loading project [  0.03s]
+12:34:20.074998 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+12:34:20.075226 [debug]:   Finished [  4.01s] downloading relations (1 items)
+12:34:20.107300 [info ]: Started building task graph
+12:34:20.107404 [info ]: Finished building task graph [  0.00s]
+12:34:20.113573 [info ]: Started rendering (8 nodes)
+12:34:20.113604 [info ]: Started model citibike_dataset.dim_stations
+12:34:20.113620 [debug]: Started rendering model citibike_dataset.dim_stations
+12:34:20.113643 [info ]: Started model citibike_dataset.agg_trips_daily
+12:34:20.113648 [debug]: Started rendering model citibike_dataset.agg_trips_daily
+12:34:20.113656 [info ]: Started model citibike_dataset.agg_trips_by_station_hour
+12:34:20.113660 [debug]: Started rendering model citibike_dataset.agg_trips_by_station_hour
+12:34:20.113667 [info ]: Started model citibike_dataset.fct_trips
+12:34:20.113673 [debug]: Started rendering model citibike_dataset.fct_trips
+12:34:20.113681 [info ]: Started model citibike_dataset.int_citibike__trips_deduplicated
+12:34:20.113686 [debug]: Started rendering model citibike_dataset.int_citibike__trips_deduplicated
+12:34:20.113692 [info ]: Started model citibike_dataset.stg_citibike__trips
+12:34:20.113697 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+12:34:20.114504 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+12:34:20.114504 [debug]: Compiled SQL for node model.citibike_dbt_2526.fct_trips at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+12:34:20.114504 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_deduplicated at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_deduplicated.sql
+12:34:20.114549 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_daily at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_daily.sql
+12:34:20.114549 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_by_station_hour at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_by_station_hour.sql
+12:34:20.114504 [debug]: Compiled SQL for node model.citibike_dbt_2526.dim_stations at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\dim_stations.sql
+12:34:20.114683 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+12:34:20.114727 [info ]: Started analyzing (8 nodes)
+12:34:20.114738 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+12:34:20.114766 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+12:34:20.114779 [debug]: Started analyzing model citibike_dataset.agg_trips_by_station_hour
+12:34:20.114796 [debug]: Finished rendering [  0.00s] model citibike_dataset.fct_trips [success]
+12:34:20.114809 [debug]: Started analyzing model citibike_dataset.fct_trips
+12:34:20.114823 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+12:34:20.114841 [info ]: Started model citibike_dataset.int_citibike__stations_unified
+12:34:20.114849 [debug]: Started rendering model citibike_dataset.int_citibike__stations_unified
+12:34:20.114866 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_deduplicated
+12:34:20.114886 [info ]: Started model citibike_dataset.int_citibike__trips_enriched
+12:34:20.114908 [debug]: Started rendering model citibike_dataset.int_citibike__trips_enriched
+12:34:20.114932 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_daily [success]
+12:34:20.114944 [debug]: Started analyzing model citibike_dataset.agg_trips_daily
+12:34:20.114957 [debug]: Finished rendering [  0.00s] model citibike_dataset.dim_stations [success]
+12:34:20.114965 [debug]: Started analyzing model citibike_dataset.dim_stations
+12:34:20.115276 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_daily [success]
+12:34:20.115292 [info ]:  Succeeded [  0.00s] model citibike_dataset.agg_trips_daily (table)
+12:34:20.115296 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__stations_unified at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__stations_unified.sql
+12:34:20.115313 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+12:34:20.115322 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_enriched at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+12:34:20.115322 [info ]:  Succeeded [  0.00s] model citibike_dataset.agg_trips_by_station_hour (table)
+12:34:20.115341 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+12:34:20.115350 [info ]:  Succeeded [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated (ephemeral)
+12:34:20.115364 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+12:34:20.115376 [info ]:  Succeeded [-------] model citibike_dataset.stg_citibike__trips (view)
+12:34:20.115396 [debug]: Finished analyzing [  0.00s] model citibike_dataset.fct_trips [success]
+12:34:20.115408 [info ]:  Succeeded [  0.00s] model citibike_dataset.fct_trips (incremental)
+12:34:20.115426 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+12:34:20.115440 [debug]: Started analyzing model citibike_dataset.int_citibike__stations_unified
+12:34:20.115462 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+12:34:20.115473 [info ]: Finished rendering [  0.00s] (8 nodes, 0 skipped, 0 errors)
+12:34:20.115483 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_enriched
+12:34:20.115695 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+12:34:20.115708 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__stations_unified (table)
+12:34:20.116300 [debug]: Finished analyzing [  0.00s] model citibike_dataset.dim_stations [success]
+12:34:20.116314 [info ]:  Succeeded [  0.00s] model citibike_dataset.dim_stations (table)
+12:34:20.116965 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+12:34:20.116974 [info ]: Finished analyzing [  0.00s] (8 nodes, 0 skipped, 0 errors)
+12:34:20.116979 [info ]:  Succeeded [  0.00s] model citibike_dataset.int_citibike__trips_enriched (table)
+12:34:20.120177 [info ]: Started scheduling
+12:34:20.120210 [info ]: Finished scheduling [  0.00s]
+12:34:20.120919 [info ]: Cached model count updated: 8 models (accurate)
+12:34:31.965627 [info ]: Started loading project
+12:34:31.966199 [info ]: Loading ~/.dbt/profiles.yml
+12:34:31.970806 [info ]: Finished loading project [  0.01s]
+12:34:31.973747 [info ]: Waiting for lease on 'target' directory
+12:34:32.382814 [info ]: Loading ~/.dbt/profiles.yml
+12:34:32.528440 [info ]: Started loading project
+12:34:32.528927 [info ]: Loading ~/.dbt/profiles.yml
+12:34:32.532636 [info ]:    Started resolving packages from packages.yml
+12:34:32.765149 [info ]:   Finished [  0.23s] resolving packages from packages.yml (1 items)
+12:34:32.765324 [debug]:    Started loading packages
+12:34:32.772449 [debug]:     Loaded [  0.01s] packages
+12:34:32.773011 [info ]: Finished loading project [  0.24s]
+12:34:32.773267 [info ]: Started parsing
+12:34:32.814212 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+12:34:32.814498 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+12:34:32.815016 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+12:34:32.815304 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+12:34:32.816738 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"loaded_at_field"`. YAML path: `loaded_at_field`.
+  --> models\staging\citibike\_citibike__sources.yml:11:9
+12:34:32.817051 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"freshness"`. YAML path: `freshness`.
+  --> models\staging\citibike\_citibike__sources.yml:12:9
+12:34:32.818399 [debug]: Finished parsing models\intermediate\int_citibike__stations_unified.sql [  0.00s]
+12:34:32.818929 [debug]: Finished parsing models\intermediate\int_citibike__trips_deduplicated.sql [  0.00s]
+12:34:32.819421 [debug]: Finished parsing models\intermediate\int_citibike__trips_enriched.sql [  0.00s]
+12:34:32.819814 [debug]: Finished parsing models\marts\mobility\agg_trips_by_station_hour.sql [  0.00s]
+12:34:32.820183 [debug]: Finished parsing models\marts\mobility\agg_trips_daily.sql [  0.00s]
+12:34:32.820611 [debug]: Finished parsing models\marts\mobility\dim_stations.sql [  0.00s]
+12:34:32.821168 [debug]: Finished parsing models\marts\mobility\fct_trips.sql [  0.00s]
+12:34:32.821553 [debug]: Finished parsing models\staging\citibike\stg_citibike__trips.sql [  0.00s]
+12:34:32.827749 [info ]: Finished parsing [  0.05s]
+12:34:32.830092 [info ]: DOWNLOADING deferral manifest
+12:34:34.025113 [info ]: DOWNLOADED deferral manifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target/.lsp\dbt_cloud_defer\manifest.json
+12:34:34.044637 [info ]: Cached model count updated: 8 models (estimate)
+12:34:34.044655 [info ]: Cached model count updated: 8 models (accurate)
+12:34:34.044686 [info ]: Started scheduling
+12:34:34.044715 [info ]: Finished scheduling [  0.00s]
+12:34:34.044726 [debug]: Compilation - 0 nodes selected: {}
+12:34:34.044738 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+12:34:34.044748 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+12:34:34.044753 [info ]: Started scheduling
+12:34:34.044803 [info ]: Finished scheduling [  0.00s]
+12:34:34.044855 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "local-tempo-493308-m1", schema: "citibike_dataset", table: "dev_Citibike2526" }) and interval: None
+12:34:34.045887 [info ]: Started deferring state
+12:34:34.045902 [info ]: Finished deferring state [  0.00s]
+12:34:34.079313 [info ]: Started building task graph
+12:34:34.079341 [info ]: Finished building task graph [  0.00s]
+12:34:34.090072 [info ]: Started scheduling
+12:34:34.090115 [info ]: Finished scheduling [  0.00s]
+12:34:34.090697 [info ]: Cached model count updated: 8 models (accurate)
+12:34:34.114826 [info ]: Waiting for lease on 'target' directory
+12:34:34.685210 [info ]: Started loading project
+12:34:34.685665 [info ]: Loading ~/.dbt/profiles.yml
+12:34:34.710060 [info ]: Cached model count updated: 8 models (estimate)
+12:34:34.710078 [info ]: Cached model count updated: 8 models (accurate)
+12:34:34.710119 [info ]: Started scheduling
+12:34:34.710185 [info ]: Finished scheduling [  0.00s]
+12:34:34.710199 [debug]: Compilation - 1 nodes selected: {"model.citibike_dbt_2526.stg_citibike__trips"}
+12:34:34.711181 [info ]: Started deferring state
+12:34:34.711199 [info ]: Finished deferring state [  0.00s]
+12:34:34.744829 [info ]: Started building task graph
+12:34:34.744876 [info ]: Finished building task graph [  0.00s]
+12:34:34.751966 [info ]: Started rendering (1 nodes)
+12:34:34.751992 [info ]: Started model citibike_dataset.stg_citibike__trips
+12:34:34.752003 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+12:34:34.752047 [info ]: Finished loading project [  0.07s]
+12:34:34.753780 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+12:34:34.753885 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+12:34:34.753903 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+12:34:34.753924 [info ]: Started analyzing (1 nodes)
+12:34:34.753934 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+12:34:34.754174 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+12:34:34.754186 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+12:34:34.754196 [info ]:  Succeeded [  0.00s] model citibike_dataset.stg_citibike__trips (view)
+12:34:34.757480 [info ]: Started scheduling
+12:34:34.757534 [info ]: Finished scheduling [  0.00s]
+12:34:34.758091 [info ]: Cached model count updated: 8 models (accurate)
+12:34:34.760324 [info ]: Waiting for lease on 'target' directory
+12:34:35.210845 [info ]: Started loading project
+12:34:35.211322 [info ]: Loading ~/.dbt/profiles.yml
+12:34:35.234400 [info ]: Cached model count updated: 8 models (estimate)
+12:34:35.234419 [info ]: Cached model count updated: 8 models (accurate)
+12:34:35.234463 [info ]: Started scheduling
+12:34:35.234514 [info ]: Finished scheduling [  0.00s]
+12:34:35.234528 [debug]: Compilation - 0 nodes selected: {}
+12:34:35.234548 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+12:34:35.234558 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+12:34:35.235559 [info ]: Started deferring state
+12:34:35.235575 [info ]: Finished deferring state [  0.00s]
+12:34:35.269508 [info ]: Started building task graph
+12:34:35.269538 [info ]: Finished building task graph [  0.00s]
+12:34:35.279150 [info ]: Started scheduling
+12:34:35.279200 [info ]: Finished scheduling [  0.00s]
+12:34:35.279298 [info ]: Finished loading project [  0.07s]
+12:34:35.279907 [info ]: Cached model count updated: 8 models (accurate)
+12:34:35.282338 [info ]: Waiting for lease on 'target' directory
+12:34:35.845944 [info ]: Started loading project
+12:34:35.846388 [info ]: Loading ~/.dbt/profiles.yml
+12:34:35.871816 [info ]: Cached model count updated: 8 models (estimate)
+12:34:35.871835 [info ]: Cached model count updated: 8 models (accurate)
+12:34:35.871880 [info ]: Started scheduling
+12:34:35.871931 [info ]: Finished scheduling [  0.00s]
+12:34:35.871945 [debug]: Compilation - 0 nodes selected: {}
+12:34:35.871965 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+12:34:35.871976 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+12:34:35.872998 [info ]: Started deferring state
+12:34:35.873015 [info ]: Finished deferring state [  0.00s]
+12:34:35.908075 [info ]: Started building task graph
+12:34:35.908104 [info ]: Finished building task graph [  0.00s]
+12:34:35.920685 [info ]: Started scheduling
+12:34:35.920749 [info ]: Finished scheduling [  0.00s]
+12:34:35.920857 [info ]: Finished loading project [  0.07s]
+12:34:35.921324 [info ]: Cached model count updated: 8 models (accurate)
+12:34:37.478883 [info ]: Started loading project
+12:34:37.479374 [info ]: Loading ~/.dbt/profiles.yml
+12:34:37.503276 [info ]: Cached model count updated: 8 models (estimate)
+12:34:37.503294 [info ]: Cached model count updated: 8 models (accurate)
+12:34:37.503336 [info ]: Started scheduling
+12:34:37.503413 [info ]: Finished scheduling [  0.00s]
+12:34:37.503429 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+12:34:37.504470 [info ]: Started deferring state
+12:34:37.504492 [info ]: Finished deferring state [  0.00s]
+12:34:37.504617 [debug]:    Started downloading relations (1 items)
+12:34:37.504662 [info ]: Finished loading project [  0.03s]
+12:34:40.890894 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+12:34:40.891047 [debug]:   Finished [  3.39s] downloading relations (1 items)
+12:34:40.937290 [info ]: Started building task graph
+12:34:40.939836 [info ]: Finished building task graph [  0.00s]
+12:34:40.951904 [info ]: Started rendering (8 nodes)
+12:34:40.951939 [info ]: Started model citibike_dataset.dim_stations
+12:34:40.951954 [debug]: Started rendering model citibike_dataset.dim_stations
+12:34:40.951988 [info ]: Started model citibike_dataset.agg_trips_daily
+12:34:40.952002 [debug]: Started rendering model citibike_dataset.agg_trips_daily
+12:34:40.952020 [info ]: Started model citibike_dataset.agg_trips_by_station_hour
+12:34:40.952030 [debug]: Started rendering model citibike_dataset.agg_trips_by_station_hour
+12:34:40.952046 [info ]: Started model citibike_dataset.fct_trips
+12:34:40.952059 [debug]: Started rendering model citibike_dataset.fct_trips
+12:34:40.952074 [info ]: Started model citibike_dataset.int_citibike__trips_deduplicated
+12:34:40.952084 [debug]: Started rendering model citibike_dataset.int_citibike__trips_deduplicated
+12:34:40.952102 [info ]: Started model citibike_dataset.stg_citibike__trips
+12:34:40.952113 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+12:34:40.952661 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+12:34:40.952729 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+12:34:40.952762 [info ]: Started analyzing (8 nodes)
+12:34:40.952775 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+12:34:40.953233 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+12:34:40.953265 [info ]:  Succeeded [-------] model citibike_dataset.stg_citibike__trips (view)
+12:34:40.956759 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_deduplicated at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_deduplicated.sql
+12:34:40.957000 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+12:34:40.957045 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_deduplicated
+12:34:40.957079 [info ]: Started model citibike_dataset.int_citibike__trips_enriched
+12:34:40.957094 [debug]: Started rendering model citibike_dataset.int_citibike__trips_enriched
+12:34:40.957112 [info ]: Started model citibike_dataset.int_citibike__stations_unified
+12:34:40.957123 [debug]: Started rendering model citibike_dataset.int_citibike__stations_unified
+12:34:40.957653 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+12:34:40.957682 [info ]:  Succeeded [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated (ephemeral)
+12:34:40.958738 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_by_station_hour at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_by_station_hour.sql
+12:34:40.958790 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_daily at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_daily.sql
+12:34:40.958878 [debug]: Finished rendering [  0.01s] model citibike_dataset.agg_trips_by_station_hour [success]
+12:34:40.958898 [debug]: Compiled SQL for node model.citibike_dbt_2526.fct_trips at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+12:34:40.958912 [debug]: Started analyzing model citibike_dataset.agg_trips_by_station_hour
+12:34:40.958935 [debug]: Finished rendering [  0.01s] model citibike_dataset.agg_trips_daily [success]
+12:34:40.958946 [debug]: Started analyzing model citibike_dataset.agg_trips_daily
+12:34:40.959006 [debug]: Compiled SQL for node model.citibike_dbt_2526.dim_stations at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\dim_stations.sql
+12:34:40.959034 [debug]: Started analyzing model citibike_dataset.fct_trips
+12:34:40.959095 [debug]: Finished rendering [  0.01s] model citibike_dataset.fct_trips [success]
+12:34:40.959121 [debug]: Finished rendering [  0.01s] model citibike_dataset.dim_stations [success]
+12:34:40.959134 [debug]: Started analyzing model citibike_dataset.dim_stations
+12:34:40.959252 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_daily [success]
+12:34:40.959266 [info ]:  Succeeded [  0.01s] model citibike_dataset.agg_trips_daily (table)
+12:34:40.959286 [debug]: Finished analyzing [  0.00s] model citibike_dataset.fct_trips [success]
+12:34:40.959294 [info ]:  Succeeded [  0.01s] model citibike_dataset.fct_trips (incremental)
+12:34:40.959472 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+12:34:40.959494 [info ]:  Succeeded [  0.01s] model citibike_dataset.agg_trips_by_station_hour (table)
+12:34:40.960122 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_enriched at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+12:34:40.960222 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__stations_unified at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__stations_unified.sql
+12:34:40.960286 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+12:34:40.960312 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_enriched
+12:34:40.960369 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+12:34:40.960387 [info ]: Finished rendering [  0.01s] (8 nodes, 0 skipped, 0 errors)
+12:34:40.960401 [debug]: Started analyzing model citibike_dataset.int_citibike__stations_unified
+12:34:40.961379 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+12:34:40.961406 [info ]:  Succeeded [  0.00s] model citibike_dataset.int_citibike__stations_unified (table)
+12:34:40.961568 [debug]: Finished analyzing [  0.00s] model citibike_dataset.dim_stations [success]
+12:34:40.961589 [info ]:  Succeeded [  0.01s] model citibike_dataset.dim_stations (table)
+12:34:40.962582 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+12:34:40.962598 [info ]: Finished analyzing [  0.01s] (8 nodes, 0 skipped, 0 errors)
+12:34:40.962612 [info ]:  Succeeded [  0.01s] model citibike_dataset.int_citibike__trips_enriched (table)
+12:34:40.968618 [info ]: Started scheduling
+12:34:40.968697 [info ]: Finished scheduling [  0.00s]
+12:34:40.969622 [info ]: Cached model count updated: 8 models (accurate)
+13:24:24.502549 [info ]: Started loading project
+13:24:24.503515 [info ]: Loading ~/.dbt/profiles.yml
+13:24:24.534427 [info ]: Cached model count updated: 8 models (estimate)
+13:24:24.534455 [info ]: Cached model count updated: 8 models (accurate)
+13:24:24.534540 [info ]: Started scheduling
+13:24:24.534708 [info ]: Finished scheduling [  0.00s]
+13:24:24.534738 [debug]: Compilation - 0 nodes selected: {}
+13:24:24.534795 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:24:24.534821 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:24:24.536467 [info ]: Started deferring state
+13:24:24.536535 [info ]: Finished deferring state [  0.00s]
+13:24:24.575882 [info ]: Started building task graph
+13:24:24.575940 [info ]: Finished building task graph [  0.00s]
+13:24:24.587333 [info ]: Started scheduling
+13:24:24.587379 [info ]: Finished scheduling [  0.00s]
+13:24:24.587512 [info ]: Finished loading project [  0.08s]
+13:24:24.587950 [info ]: Cached model count updated: 8 models (accurate)
+13:24:25.516688 [info ]: Started loading project
+13:24:25.517182 [info ]: Loading ~/.dbt/profiles.yml
+13:24:25.539381 [info ]: Cached model count updated: 8 models (estimate)
+13:24:25.539398 [info ]: Cached model count updated: 8 models (accurate)
+13:24:25.539429 [info ]: Started scheduling
+13:24:25.539471 [info ]: Finished scheduling [  0.00s]
+13:24:25.539482 [debug]: Compilation - 0 nodes selected: {}
+13:24:25.539495 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:24:25.539504 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:24:25.540577 [info ]: Started deferring state
+13:24:25.540592 [info ]: Finished deferring state [  0.00s]
+13:24:25.573388 [info ]: Started building task graph
+13:24:25.573415 [info ]: Finished building task graph [  0.00s]
+13:24:25.582775 [info ]: Started scheduling
+13:24:25.582814 [info ]: Finished scheduling [  0.00s]
+13:24:25.582906 [info ]: Finished loading project [  0.07s]
+13:24:25.583310 [info ]: Cached model count updated: 8 models (accurate)
+13:24:25.719374 [info ]: Waiting for lease on 'target' directory
+13:24:26.086672 [info ]: Started loading project
+13:24:26.087175 [info ]: Loading ~/.dbt/profiles.yml
+13:24:26.108774 [info ]: Cached model count updated: 8 models (estimate)
+13:24:26.108791 [info ]: Cached model count updated: 8 models (accurate)
+13:24:26.108822 [info ]: Started scheduling
+13:24:26.108865 [info ]: Finished scheduling [  0.00s]
+13:24:26.108876 [debug]: Compilation - 0 nodes selected: {}
+13:24:26.108891 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:24:26.108900 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:24:26.109884 [info ]: Started deferring state
+13:24:26.109897 [info ]: Finished deferring state [  0.00s]
+13:24:26.143650 [info ]: Started building task graph
+13:24:26.143676 [info ]: Finished building task graph [  0.00s]
+13:24:26.153566 [info ]: Started scheduling
+13:24:26.153612 [info ]: Finished scheduling [  0.00s]
+13:24:26.153713 [info ]: Finished loading project [  0.07s]
+13:24:26.154120 [info ]: Cached model count updated: 8 models (accurate)
+13:24:26.599629 [info ]: Started loading project
+13:24:26.600083 [info ]: Loading ~/.dbt/profiles.yml
+13:24:26.621905 [info ]: Cached model count updated: 8 models (estimate)
+13:24:26.621922 [info ]: Cached model count updated: 8 models (accurate)
+13:24:26.621952 [info ]: Started scheduling
+13:24:26.621996 [info ]: Finished scheduling [  0.00s]
+13:24:26.622006 [debug]: Compilation - 0 nodes selected: {}
+13:24:26.622021 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:24:26.622030 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:24:26.623002 [info ]: Started deferring state
+13:24:26.623014 [info ]: Finished deferring state [  0.00s]
+13:24:26.655330 [info ]: Started building task graph
+13:24:26.655356 [info ]: Finished building task graph [  0.00s]
+13:24:26.664920 [info ]: Started scheduling
+13:24:26.664955 [info ]: Finished scheduling [  0.00s]
+13:24:26.665049 [info ]: Finished loading project [  0.07s]
+13:24:26.665470 [info ]: Cached model count updated: 8 models (accurate)
+13:24:28.322606 [info ]: Started loading project
+13:24:28.323129 [info ]: Loading ~/.dbt/profiles.yml
+13:24:28.346696 [info ]: Cached model count updated: 8 models (estimate)
+13:24:28.346714 [info ]: Cached model count updated: 8 models (accurate)
+13:24:28.346741 [info ]: Started scheduling
+13:24:28.346826 [info ]: Finished scheduling [  0.00s]
+13:24:28.346839 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+13:24:28.347870 [info ]: Started deferring state
+13:24:28.347891 [info ]: Finished deferring state [  0.00s]
+13:24:28.348039 [debug]:    Started downloading relations (1 items)
+13:24:28.348101 [info ]: Finished loading project [  0.03s]
+13:24:31.763461 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+13:24:31.763673 [debug]:   Finished [  3.42s] downloading relations (1 items)
+13:24:31.797699 [info ]: Started building task graph
+13:24:31.797821 [info ]: Finished building task graph [  0.00s]
+13:24:31.805142 [info ]: Started rendering (8 nodes)
+13:24:31.805191 [info ]: Started model citibike_dataset.dim_stations
+13:24:31.805217 [debug]: Started rendering model citibike_dataset.dim_stations
+13:24:31.805256 [info ]: Started model citibike_dataset.agg_trips_daily
+13:24:31.805267 [debug]: Started rendering model citibike_dataset.agg_trips_daily
+13:24:31.805280 [info ]: Started model citibike_dataset.agg_trips_by_station_hour
+13:24:31.805288 [debug]: Started rendering model citibike_dataset.agg_trips_by_station_hour
+13:24:31.805300 [info ]: Started model citibike_dataset.fct_trips
+13:24:31.805307 [debug]: Started rendering model citibike_dataset.fct_trips
+13:24:31.805318 [info ]: Started model citibike_dataset.int_citibike__trips_deduplicated
+13:24:31.805327 [debug]: Started rendering model citibike_dataset.int_citibike__trips_deduplicated
+13:24:31.805335 [info ]: Started model citibike_dataset.stg_citibike__trips
+13:24:31.805345 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+13:24:31.805809 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_by_station_hour at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_by_station_hour.sql
+13:24:31.805808 [debug]: Compiled SQL for node model.citibike_dbt_2526.dim_stations at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\dim_stations.sql
+13:24:31.805913 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_daily at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_daily.sql
+13:24:31.805933 [debug]: Compiled SQL for node model.citibike_dbt_2526.fct_trips at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+13:24:31.805957 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_deduplicated at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_deduplicated.sql
+13:24:31.805967 [debug]: Finished rendering [  0.00s] model citibike_dataset.dim_stations [success]
+13:24:31.805995 [info ]: Started analyzing (8 nodes)
+13:24:31.806004 [debug]: Started analyzing model citibike_dataset.dim_stations
+13:24:31.806011 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+13:24:31.806030 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+13:24:31.806045 [debug]: Started analyzing model citibike_dataset.agg_trips_by_station_hour
+13:24:31.806058 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_daily [success]
+13:24:31.806070 [debug]: Started analyzing model citibike_dataset.agg_trips_daily
+13:24:31.806086 [debug]: Finished rendering [  0.00s] model citibike_dataset.fct_trips [success]
+13:24:31.806096 [debug]: Started analyzing model citibike_dataset.fct_trips
+13:24:31.806110 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+13:24:31.806124 [info ]: Started model citibike_dataset.int_citibike__trips_enriched
+13:24:31.806133 [debug]: Started rendering model citibike_dataset.int_citibike__trips_enriched
+13:24:31.806143 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_deduplicated
+13:24:31.806158 [info ]: Started model citibike_dataset.int_citibike__stations_unified
+13:24:31.806169 [debug]: Started rendering model citibike_dataset.int_citibike__stations_unified
+13:24:31.806183 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:24:31.806191 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+13:24:31.806481 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_enriched at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+13:24:31.806538 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+13:24:31.806562 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_enriched
+13:24:31.806596 [debug]: Finished analyzing [  0.00s] model citibike_dataset.fct_trips [success]
+13:24:31.806607 [info ]:  Succeeded [-------] model citibike_dataset.fct_trips (incremental)
+13:24:31.806620 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_daily [success]
+13:24:31.806627 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_daily (table)
+13:24:31.806636 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+13:24:31.806636 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__stations_unified at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__stations_unified.sql
+13:24:31.806643 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_by_station_hour (table)
+13:24:31.806656 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:24:31.806664 [info ]:  Succeeded [-------] model citibike_dataset.stg_citibike__trips (view)
+13:24:31.806679 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+13:24:31.806686 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__trips_deduplicated (ephemeral)
+13:24:31.806696 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+13:24:31.806701 [info ]: Finished rendering [  0.00s] (8 nodes, 0 skipped, 0 errors)
+13:24:31.806707 [debug]: Started analyzing model citibike_dataset.int_citibike__stations_unified
+13:24:31.806923 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+13:24:31.806935 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__stations_unified (table)
+13:24:31.807500 [debug]: Finished analyzing [  0.00s] model citibike_dataset.dim_stations [success]
+13:24:31.807513 [info ]:  Succeeded [  0.00s] model citibike_dataset.dim_stations (table)
+13:24:31.808106 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+13:24:31.808120 [info ]: Finished analyzing [  0.00s] (8 nodes, 0 skipped, 0 errors)
+13:24:31.808128 [info ]:  Succeeded [  0.00s] model citibike_dataset.int_citibike__trips_enriched (table)
+13:24:31.811363 [info ]: Started scheduling
+13:24:31.811405 [info ]: Finished scheduling [  0.00s]
+13:24:31.812118 [info ]: Cached model count updated: 8 models (accurate)
+13:24:49.627990 [info ]: Started loading project
+13:24:49.628538 [info ]: Loading ~/.dbt/profiles.yml
+13:24:49.650005 [info ]: Cached model count updated: 8 models (estimate)
+13:24:49.650022 [info ]: Cached model count updated: 8 models (accurate)
+13:24:49.650051 [info ]: Started scheduling
+13:24:49.650097 [info ]: Finished scheduling [  0.00s]
+13:24:49.650108 [debug]: Compilation - 0 nodes selected: {}
+13:24:49.650122 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:24:49.650130 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:24:49.651075 [info ]: Started deferring state
+13:24:49.651087 [info ]: Finished deferring state [  0.00s]
+13:24:49.684973 [info ]: Started building task graph
+13:24:49.685013 [info ]: Finished building task graph [  0.00s]
+13:24:49.695650 [info ]: Started scheduling
+13:24:49.695692 [info ]: Finished scheduling [  0.00s]
+13:24:49.695793 [info ]: Finished loading project [  0.07s]
+13:24:49.696200 [info ]: Cached model count updated: 8 models (accurate)
+13:24:51.355978 [info ]: Started loading project
+13:24:51.356548 [info ]: Loading ~/.dbt/profiles.yml
+13:24:51.378512 [info ]: Cached model count updated: 8 models (estimate)
+13:24:51.378529 [info ]: Cached model count updated: 8 models (accurate)
+13:24:51.378555 [info ]: Started scheduling
+13:24:51.378622 [info ]: Finished scheduling [  0.00s]
+13:24:51.378634 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+13:24:51.379583 [info ]: Started deferring state
+13:24:51.379598 [info ]: Finished deferring state [  0.00s]
+13:24:51.379702 [debug]:    Started downloading relations (1 items)
+13:24:51.379735 [info ]: Finished loading project [  0.02s]
+13:24:54.607587 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+13:24:54.609638 [debug]:     Failed [  3.23s] downloading relations (error: Adapter operation was cancelled)
+13:24:54.613075 [info ]: Cached model count updated: 8 models (accurate)
+13:24:54.613535 [info ]: Waiting for lease on 'target' directory
+13:24:55.058782 [info ]: Started loading project
+13:24:55.059268 [info ]: Loading ~/.dbt/profiles.yml
+13:24:55.066027 [info ]: Started parsing
+13:24:55.097665 [info ]: Finished loading project [  0.04s]
+13:24:55.108353 [error]: [SerializationError (dbt1013)]: YAML error: did not find expected key at line 13 column 11, while parsing a block mapping at line 7 column 9
+  --> models\staging\citibike\_citibike__sources.yml:13:11
+13:24:55.108615 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.01s]
+13:24:55.111965 [info ]: Finished parsing [  0.05s]
+13:24:55.113171 [info ]: Cached model count updated: 8 models (accurate)
+13:24:55.113672 [info ]: Waiting for lease on 'target' directory
+13:24:55.666780 [info ]: Started loading project
+13:24:55.667231 [info ]: Loading ~/.dbt/profiles.yml
+13:24:55.673927 [info ]: Started parsing
+13:24:55.703054 [info ]: Finished loading project [  0.04s]
+13:24:55.705947 [error]: [SerializationError (dbt1013)]: YAML error: did not find expected key at line 13 column 11, while parsing a block mapping at line 7 column 9
+  --> models\staging\citibike\_citibike__sources.yml:13:11
+13:24:55.706395 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+13:24:55.707121 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+13:24:55.707844 [debug]: Finished parsing models\staging\citibike\stg_citibike__trips.sql [  0.00s]
+13:24:55.709634 [error]: [DependencyNotFound (dbt1048)]: Source 'Citibike2526_dbt_project.dev_Citibike2526' not found in project. Searched for 'dev_Citibike2526'
+  --> models\staging\citibike\stg_citibike__trips.sql:9:19
+13:24:55.714961 [info ]: Cached model count updated: 8 models (estimate)
+13:24:55.714971 [info ]: Cached model count updated: 8 models (accurate)
+13:24:55.714994 [info ]: Started scheduling
+13:24:55.715046 [info ]: Finished scheduling [  0.00s]
+13:24:55.715056 [debug]: Compilation - 1 nodes selected: {"model.citibike_dbt_2526.stg_citibike__trips"}
+13:24:55.715805 [info ]: Started deferring state
+13:24:55.715817 [info ]: Finished deferring state [  0.00s]
+13:24:55.749670 [info ]: Started building task graph
+13:24:55.749705 [info ]: Finished building task graph [  0.00s]
+13:24:55.756547 [info ]: Started rendering (1 nodes)
+13:24:55.756570 [info ]: Started model citibike_dataset.stg_citibike__trips
+13:24:55.756579 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+13:24:55.756635 [info ]: Finished parsing [  0.08s]
+13:24:55.757265 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: Citibike2526_dbt_project, table name: dev_Citibike2526
+(in models\staging\citibike\stg_citibike__trips.sql:9:19)
+  --> models\staging\citibike\stg_citibike__trips.sql:9:19
+13:24:55.757308 [info ]: Started analyzing (1 nodes)
+13:24:55.757315 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+13:24:55.757332 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [skipped]
+13:24:55.757342 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+13:24:55.757347 [info ]:     Failed [-------] model citibike_dataset.stg_citibike__trips (view)
+13:24:55.760994 [info ]: Started scheduling
+13:24:55.761033 [info ]: Finished scheduling [  0.00s]
+13:24:55.762091 [info ]: Cached model count updated: 8 models (accurate)
+13:24:55.762110 [debug]: Finished rendering [  0.01s] model citibike_dataset.stg_citibike__trips [error]
+13:24:55.762119 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+13:24:57.422642 [info ]: Started loading project
+13:24:57.423107 [info ]: Loading ~/.dbt/profiles.yml
+13:24:57.445019 [info ]: Cached model count updated: 8 models (estimate)
+13:24:57.445037 [info ]: Cached model count updated: 8 models (accurate)
+13:24:57.445063 [info ]: Started scheduling
+13:24:57.445125 [info ]: Finished scheduling [  0.00s]
+13:24:57.445136 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+13:24:57.446070 [info ]: Started deferring state
+13:24:57.446083 [info ]: Finished deferring state [  0.00s]
+13:24:57.446186 [debug]:    Started downloading relations (1 items)
+13:24:57.446219 [info ]: Finished loading project [  0.02s]
+13:25:00.528068 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+13:25:00.529730 [debug]:     Failed [  3.08s] downloading relations (error: Adapter operation was cancelled)
+13:25:00.533675 [info ]: Cached model count updated: 8 models (accurate)
+13:25:00.534055 [info ]: Waiting for lease on 'target' directory
+13:25:01.087468 [info ]: Started loading project
+13:25:01.087925 [info ]: Loading ~/.dbt/profiles.yml
+13:25:01.094775 [info ]: Started parsing
+13:25:01.130383 [info ]: Finished loading project [  0.04s]
+13:25:01.132886 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+13:25:01.133103 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+13:25:01.134410 [debug]: Finished parsing models\staging\citibike\stg_citibike__trips.sql [  0.00s]
+13:25:01.137415 [info ]: Finished parsing [  0.04s]
+13:25:01.141902 [info ]: Cached model count updated: 8 models (estimate)
+13:25:01.141915 [info ]: Cached model count updated: 8 models (accurate)
+13:25:01.141943 [info ]: Started scheduling
+13:25:01.142000 [info ]: Finished scheduling [  0.00s]
+13:25:01.142010 [debug]: Compilation - 1 nodes selected: {"model.citibike_dbt_2526.stg_citibike__trips"}
+13:25:01.142829 [info ]: Started deferring state
+13:25:01.142842 [info ]: Finished deferring state [  0.00s]
+13:25:01.175801 [info ]: Started building task graph
+13:25:01.175841 [info ]: Finished building task graph [  0.00s]
+13:25:01.182039 [info ]: Started rendering (1 nodes)
+13:25:01.182056 [info ]: Started model citibike_dataset.stg_citibike__trips
+13:25:01.182063 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+13:25:01.183396 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+13:25:01.183484 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:25:01.183498 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+13:25:01.183510 [info ]: Started analyzing (1 nodes)
+13:25:01.183519 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+13:25:01.183747 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:25:01.183756 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+13:25:01.183762 [info ]:  Succeeded [  0.00s] model citibike_dataset.stg_citibike__trips (view)
+13:25:01.187834 [info ]: Started scheduling
+13:25:01.187937 [info ]: Finished scheduling [  0.00s]
+13:25:01.190519 [info ]: Cached model count updated: 8 models (accurate)
+13:25:02.165848 [info ]: Started loading project
+13:25:02.166306 [info ]: Loading ~/.dbt/profiles.yml
+13:25:02.174738 [info ]: Started parsing
+13:25:02.214862 [info ]: Finished loading project [  0.05s]
+13:25:02.217462 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+13:25:02.217685 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+13:25:02.218942 [debug]: Finished parsing models\staging\citibike\stg_citibike__trips.sql [  0.00s]
+13:25:02.221809 [info ]: Finished parsing [  0.05s]
+13:25:02.226092 [info ]: Cached model count updated: 8 models (estimate)
+13:25:02.226108 [info ]: Cached model count updated: 8 models (accurate)
+13:25:02.226137 [info ]: Started scheduling
+13:25:02.226197 [info ]: Finished scheduling [  0.00s]
+13:25:02.226207 [debug]: Compilation - 1 nodes selected: {"model.citibike_dbt_2526.stg_citibike__trips"}
+13:25:02.227172 [info ]: Started deferring state
+13:25:02.227191 [info ]: Finished deferring state [  0.00s]
+13:25:02.259275 [info ]: Started building task graph
+13:25:02.259314 [info ]: Finished building task graph [  0.00s]
+13:25:02.265511 [info ]: Started rendering (1 nodes)
+13:25:02.265526 [info ]: Started model citibike_dataset.stg_citibike__trips
+13:25:02.265535 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+13:25:02.266841 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+13:25:02.266916 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:25:02.266933 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+13:25:02.266947 [info ]: Started analyzing (1 nodes)
+13:25:02.266955 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+13:25:02.267185 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:25:02.267195 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+13:25:02.267200 [info ]:  Succeeded [  0.00s] model citibike_dataset.stg_citibike__trips (view)
+13:25:02.270873 [info ]: Started scheduling
+13:25:02.270977 [info ]: Finished scheduling [  0.00s]
+13:25:02.272105 [info ]: Cached model count updated: 8 models (accurate)
+13:25:03.682547 [info ]: Started loading project
+13:25:03.682976 [info ]: Loading ~/.dbt/profiles.yml
+13:25:03.705536 [info ]: Cached model count updated: 8 models (estimate)
+13:25:03.705554 [info ]: Cached model count updated: 8 models (accurate)
+13:25:03.705587 [info ]: Started scheduling
+13:25:03.705632 [info ]: Finished scheduling [  0.00s]
+13:25:03.705642 [debug]: Compilation - 0 nodes selected: {}
+13:25:03.705657 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:25:03.705666 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:25:03.706715 [info ]: Started deferring state
+13:25:03.706730 [info ]: Finished deferring state [  0.00s]
+13:25:03.741001 [info ]: Started building task graph
+13:25:03.741028 [info ]: Finished building task graph [  0.00s]
+13:25:03.750479 [info ]: Started scheduling
+13:25:03.750517 [info ]: Finished scheduling [  0.00s]
+13:25:03.750616 [info ]: Finished loading project [  0.07s]
+13:25:03.751018 [info ]: Cached model count updated: 8 models (accurate)
+13:25:03.753539 [info ]: Waiting for lease on 'target' directory
+13:25:04.199230 [info ]: Started loading project
+13:25:04.199662 [info ]: Loading ~/.dbt/profiles.yml
+13:25:04.222969 [info ]: Cached model count updated: 8 models (estimate)
+13:25:04.222987 [info ]: Cached model count updated: 8 models (accurate)
+13:25:04.223018 [info ]: Started scheduling
+13:25:04.223062 [info ]: Finished scheduling [  0.00s]
+13:25:04.223073 [debug]: Compilation - 0 nodes selected: {}
+13:25:04.223088 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:25:04.223097 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:25:04.224146 [info ]: Started deferring state
+13:25:04.224161 [info ]: Finished deferring state [  0.00s]
+13:25:04.257305 [info ]: Started building task graph
+13:25:04.257331 [info ]: Finished building task graph [  0.00s]
+13:25:04.268578 [info ]: Started scheduling
+13:25:04.268627 [info ]: Finished scheduling [  0.00s]
+13:25:04.268732 [info ]: Finished loading project [  0.07s]
+13:25:04.269226 [info ]: Cached model count updated: 8 models (accurate)
+13:25:04.270821 [info ]: Waiting for lease on 'target' directory
+13:25:04.816144 [info ]: Started loading project
+13:25:04.816571 [info ]: Loading ~/.dbt/profiles.yml
+13:25:04.839030 [info ]: Cached model count updated: 8 models (estimate)
+13:25:04.839050 [info ]: Cached model count updated: 8 models (accurate)
+13:25:04.839087 [info ]: Started scheduling
+13:25:04.839139 [info ]: Finished scheduling [  0.00s]
+13:25:04.839158 [debug]: Compilation - 0 nodes selected: {}
+13:25:04.839180 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:25:04.839190 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:25:04.840278 [info ]: Started deferring state
+13:25:04.840302 [info ]: Finished deferring state [  0.00s]
+13:25:04.874963 [info ]: Started building task graph
+13:25:04.874990 [info ]: Finished building task graph [  0.00s]
+13:25:04.884351 [info ]: Started scheduling
+13:25:04.884390 [info ]: Finished scheduling [  0.00s]
+13:25:04.884482 [info ]: Finished loading project [  0.07s]
+13:25:04.884884 [info ]: Cached model count updated: 8 models (accurate)
+13:25:06.538675 [info ]: Started loading project
+13:25:06.539134 [info ]: Loading ~/.dbt/profiles.yml
+13:25:06.564668 [info ]: Cached model count updated: 8 models (estimate)
+13:25:06.564687 [info ]: Cached model count updated: 8 models (accurate)
+13:25:06.564716 [info ]: Started scheduling
+13:25:06.564788 [info ]: Finished scheduling [  0.00s]
+13:25:06.564801 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+13:25:06.565860 [info ]: Started deferring state
+13:25:06.565877 [info ]: Finished deferring state [  0.00s]
+13:25:06.565999 [debug]:    Started downloading relations (1 items)
+13:25:06.566040 [info ]: Finished loading project [  0.03s]
+13:25:09.322955 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+13:25:09.323094 [debug]:   Finished [  2.76s] downloading relations (1 items)
+13:25:09.356568 [info ]: Started building task graph
+13:25:09.356652 [info ]: Finished building task graph [  0.00s]
+13:25:09.362949 [info ]: Started rendering (8 nodes)
+13:25:09.362969 [info ]: Started model citibike_dataset.dim_stations
+13:25:09.362981 [debug]: Started rendering model citibike_dataset.dim_stations
+13:25:09.363005 [info ]: Started model citibike_dataset.agg_trips_daily
+13:25:09.363013 [debug]: Started rendering model citibike_dataset.agg_trips_daily
+13:25:09.363024 [info ]: Started model citibike_dataset.agg_trips_by_station_hour
+13:25:09.363032 [debug]: Started rendering model citibike_dataset.agg_trips_by_station_hour
+13:25:09.363045 [info ]: Started model citibike_dataset.fct_trips
+13:25:09.363053 [debug]: Started rendering model citibike_dataset.fct_trips
+13:25:09.363065 [info ]: Started model citibike_dataset.int_citibike__trips_deduplicated
+13:25:09.363075 [debug]: Started rendering model citibike_dataset.int_citibike__trips_deduplicated
+13:25:09.363088 [info ]: Started model citibike_dataset.stg_citibike__trips
+13:25:09.363094 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+13:25:09.363427 [debug]: Compiled SQL for node model.citibike_dbt_2526.dim_stations at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\dim_stations.sql
+13:25:09.363427 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_daily at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_daily.sql
+13:25:09.363437 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_by_station_hour at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_by_station_hour.sql
+13:25:09.363494 [debug]: Finished rendering [  0.00s] model citibike_dataset.dim_stations [success]
+13:25:09.363525 [info ]: Started analyzing (8 nodes)
+13:25:09.363540 [debug]: Started analyzing model citibike_dataset.dim_stations
+13:25:09.363561 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_daily [success]
+13:25:09.363582 [debug]: Started analyzing model citibike_dataset.agg_trips_daily
+13:25:09.363609 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+13:25:09.363651 [debug]: Started analyzing model citibike_dataset.agg_trips_by_station_hour
+13:25:09.363666 [debug]: Compiled SQL for node model.citibike_dbt_2526.fct_trips at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+13:25:09.363712 [debug]: Finished rendering [  0.00s] model citibike_dataset.fct_trips [success]
+13:25:09.363722 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_deduplicated at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_deduplicated.sql
+13:25:09.363733 [debug]: Started analyzing model citibike_dataset.fct_trips
+13:25:09.363754 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+13:25:09.363771 [info ]: Started model citibike_dataset.int_citibike__stations_unified
+13:25:09.363782 [debug]: Started rendering model citibike_dataset.int_citibike__stations_unified
+13:25:09.363794 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+13:25:09.363796 [info ]: Started model citibike_dataset.int_citibike__trips_enriched
+13:25:09.363807 [debug]: Started rendering model citibike_dataset.int_citibike__trips_enriched
+13:25:09.363818 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_deduplicated
+13:25:09.363832 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:25:09.363844 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+13:25:09.363857 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+13:25:09.363865 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_by_station_hour (table)
+13:25:09.363883 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_daily [success]
+13:25:09.363889 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_daily (table)
+13:25:09.363896 [debug]: Finished analyzing [  0.00s] model citibike_dataset.fct_trips [success]
+13:25:09.363900 [info ]:  Succeeded [-------] model citibike_dataset.fct_trips (incremental)
+13:25:09.364020 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+13:25:09.364039 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__trips_deduplicated (ephemeral)
+13:25:09.364118 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:25:09.364137 [info ]:  Succeeded [-------] model citibike_dataset.stg_citibike__trips (view)
+13:25:09.364150 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__stations_unified at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__stations_unified.sql
+13:25:09.364182 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_enriched at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+13:25:09.364188 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+13:25:09.364203 [debug]: Started analyzing model citibike_dataset.int_citibike__stations_unified
+13:25:09.364219 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+13:25:09.364228 [info ]: Finished rendering [  0.00s] (8 nodes, 0 skipped, 0 errors)
+13:25:09.364234 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_enriched
+13:25:09.364494 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+13:25:09.364509 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__stations_unified (table)
+13:25:09.365074 [debug]: Finished analyzing [  0.00s] model citibike_dataset.dim_stations [success]
+13:25:09.365091 [info ]:  Succeeded [  0.00s] model citibike_dataset.dim_stations (table)
+13:25:09.365774 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+13:25:09.365787 [info ]: Finished analyzing [  0.00s] (8 nodes, 0 skipped, 0 errors)
+13:25:09.365797 [info ]:  Succeeded [  0.00s] model citibike_dataset.int_citibike__trips_enriched (table)
+13:25:09.370857 [info ]: Started scheduling
+13:25:09.370915 [info ]: Finished scheduling [  0.00s]
+13:25:09.371819 [info ]: Cached model count updated: 8 models (accurate)
+13:27:23.135559 [info ]: Started loading project
+13:27:23.136087 [info ]: Loading ~/.dbt/profiles.yml
+13:27:23.161773 [info ]: Cached model count updated: 8 models (estimate)
+13:27:23.161791 [info ]: Cached model count updated: 8 models (accurate)
+13:27:23.161823 [info ]: Started scheduling
+13:27:23.161870 [info ]: Finished scheduling [  0.00s]
+13:27:23.161881 [debug]: Compilation - 0 nodes selected: {}
+13:27:23.161904 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:27:23.161914 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:27:23.162885 [info ]: Started deferring state
+13:27:23.162900 [info ]: Finished deferring state [  0.00s]
+13:27:23.198589 [info ]: Started building task graph
+13:27:23.198617 [info ]: Finished building task graph [  0.00s]
+13:27:23.208705 [info ]: Started scheduling
+13:27:23.208747 [info ]: Finished scheduling [  0.00s]
+13:27:23.208851 [info ]: Finished loading project [  0.07s]
+13:27:23.209247 [info ]: Cached model count updated: 8 models (accurate)
+13:27:23.910055 [info ]: Started loading project
+13:27:23.910596 [info ]: Loading ~/.dbt/profiles.yml
+13:27:23.933538 [info ]: Cached model count updated: 8 models (estimate)
+13:27:23.933555 [info ]: Cached model count updated: 8 models (accurate)
+13:27:23.933584 [info ]: Started scheduling
+13:27:23.933627 [info ]: Finished scheduling [  0.00s]
+13:27:23.933637 [debug]: Compilation - 0 nodes selected: {}
+13:27:23.933651 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:27:23.933660 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:27:23.935034 [info ]: Started deferring state
+13:27:23.935052 [info ]: Finished deferring state [  0.00s]
+13:27:23.969652 [info ]: Started building task graph
+13:27:23.969676 [info ]: Finished building task graph [  0.00s]
+13:27:23.979069 [info ]: Started scheduling
+13:27:23.979107 [info ]: Finished scheduling [  0.00s]
+13:27:23.979199 [info ]: Finished loading project [  0.07s]
+13:27:23.979595 [info ]: Cached model count updated: 8 models (accurate)
+13:27:24.783329 [info ]: Started loading project
+13:27:24.783769 [info ]: Loading ~/.dbt/profiles.yml
+13:27:24.806480 [info ]: Cached model count updated: 8 models (estimate)
+13:27:24.806498 [info ]: Cached model count updated: 8 models (accurate)
+13:27:24.806531 [info ]: Started scheduling
+13:27:24.806575 [info ]: Finished scheduling [  0.00s]
+13:27:24.806585 [debug]: Compilation - 0 nodes selected: {}
+13:27:24.806599 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.Citibike2526_dbt_project.dev_Citibike2526' does not match any enabled nodes
+13:27:24.806609 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:27:24.807583 [info ]: Started deferring state
+13:27:24.807595 [info ]: Finished deferring state [  0.00s]
+13:27:24.841348 [info ]: Started building task graph
+13:27:24.841387 [info ]: Finished building task graph [  0.00s]
+13:27:24.851118 [info ]: Started scheduling
+13:27:24.851159 [info ]: Finished scheduling [  0.00s]
+13:27:24.851261 [info ]: Finished loading project [  0.07s]
+13:27:24.851711 [info ]: Cached model count updated: 8 models (accurate)
+13:27:26.344259 [info ]: Started loading project
+13:27:26.344699 [info ]: Loading ~/.dbt/profiles.yml
+13:27:26.367612 [info ]: Cached model count updated: 8 models (estimate)
+13:27:26.367629 [info ]: Cached model count updated: 8 models (accurate)
+13:27:26.367657 [info ]: Started scheduling
+13:27:26.367727 [info ]: Finished scheduling [  0.00s]
+13:27:26.367739 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+13:27:26.369026 [info ]: Started deferring state
+13:27:26.369060 [info ]: Finished deferring state [  0.00s]
+13:27:26.369243 [debug]:    Started downloading relations (1 items)
+13:27:26.369304 [info ]: Finished loading project [  0.03s]
+13:27:29.172155 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+13:27:29.174442 [debug]:     Failed [  2.81s] downloading relations (error: Adapter operation was cancelled)
+13:27:29.178170 [info ]: Cached model count updated: 8 models (accurate)
+13:27:29.178559 [info ]: Waiting for lease on 'target' directory
+13:27:29.523898 [info ]: Started loading project
+13:27:29.524344 [info ]: Loading ~/.dbt/profiles.yml
+13:27:29.532316 [info ]: Started parsing
+13:27:29.580909 [info ]: Finished loading project [  0.06s]
+13:27:29.583849 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+13:27:29.584087 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+13:27:29.585892 [debug]: Finished parsing models\staging\citibike\stg_citibike__trips.sql [  0.00s]
+13:27:29.587621 [error]: [DependencyNotFound (dbt1048)]: Source 'Citibike2526_dbt_project.dev_Citibike2526' not found in project. Searched for 'dev_Citibike2526'
+  --> models\staging\citibike\stg_citibike__trips.sql:9:19
+13:27:29.593390 [info ]: Cached model count updated: 8 models (estimate)
+13:27:29.593407 [info ]: Cached model count updated: 8 models (accurate)
+13:27:29.593438 [info ]: Started scheduling
+13:27:29.593500 [info ]: Finished scheduling [  0.00s]
+13:27:29.593516 [debug]: Compilation - 1 nodes selected: {"model.citibike_dbt_2526.stg_citibike__trips"}
+13:27:29.594517 [info ]: Started deferring state
+13:27:29.594533 [info ]: Finished deferring state [  0.00s]
+13:27:29.634673 [info ]: Started building task graph
+13:27:29.634722 [info ]: Finished building task graph [  0.00s]
+13:27:29.641892 [info ]: Started rendering (1 nodes)
+13:27:29.641928 [info ]: Started model citibike_dataset.stg_citibike__trips
+13:27:29.641942 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+13:27:29.642013 [info ]: Finished parsing [  0.11s]
+13:27:29.642675 [error]: [JinjaError (dbt1501)]: Failed to render SQL not a key type: Source not found for source name: Citibike2526_dbt_project, table name: dev_Citibike2526
+(in models\staging\citibike\stg_citibike__trips.sql:9:19)
+  --> models\staging\citibike\stg_citibike__trips.sql:9:19
+13:27:29.642714 [info ]: Started analyzing (1 nodes)
+13:27:29.642722 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+13:27:29.642735 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [skipped]
+13:27:29.642745 [info ]: Finished analyzing [  0.00s] (1 nodes, 1 skipped, 0 errors)
+13:27:29.642751 [info ]:     Failed [-------] model citibike_dataset.stg_citibike__trips (view)
+13:27:29.646363 [info ]: Started scheduling
+13:27:29.646418 [info ]: Finished scheduling [  0.00s]
+13:27:29.647484 [info ]: Cached model count updated: 8 models (accurate)
+13:27:29.647504 [debug]: Finished rendering [  0.01s] model citibike_dataset.stg_citibike__trips [error]
+13:27:29.647514 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 1 errors)
+13:27:31.129625 [info ]: Started loading project
+13:27:31.130074 [info ]: Loading ~/.dbt/profiles.yml
+13:27:31.151899 [info ]: Cached model count updated: 8 models (estimate)
+13:27:31.151926 [info ]: Cached model count updated: 8 models (accurate)
+13:27:31.151968 [info ]: Started scheduling
+13:27:31.152073 [info ]: Finished scheduling [  0.00s]
+13:27:31.152095 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+13:27:31.153305 [info ]: Started deferring state
+13:27:31.153329 [info ]: Finished deferring state [  0.00s]
+13:27:31.153478 [debug]:    Started downloading relations (1 items)
+13:27:31.153524 [info ]: Finished loading project [  0.02s]
+13:27:34.398517 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+13:27:34.400275 [debug]:     Failed [  3.25s] downloading relations (error: Adapter operation was cancelled)
+13:27:34.405477 [info ]: Cached model count updated: 8 models (accurate)
+13:27:34.406003 [info ]: Waiting for lease on 'target' directory
+13:27:34.749680 [info ]: Started loading project
+13:27:34.750126 [info ]: Loading ~/.dbt/profiles.yml
+13:27:34.759485 [info ]: Started parsing
+13:27:34.811269 [info ]: Finished loading project [  0.06s]
+13:27:34.813873 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+13:27:34.814887 [debug]: Finished parsing models\staging\citibike\stg_citibike__trips.sql [  0.00s]
+13:27:34.817379 [info ]: Finished parsing [  0.06s]
+13:27:34.822709 [info ]: Cached model count updated: 8 models (estimate)
+13:27:34.822725 [info ]: Cached model count updated: 8 models (accurate)
+13:27:34.822751 [info ]: Started scheduling
+13:27:34.822804 [info ]: Finished scheduling [  0.00s]
+13:27:34.822815 [debug]: Compilation - 1 nodes selected: {"model.citibike_dbt_2526.stg_citibike__trips"}
+13:27:34.823819 [info ]: Started deferring state
+13:27:34.823835 [info ]: Finished deferring state [  0.00s]
+13:27:34.856697 [info ]: Started building task graph
+13:27:34.856736 [info ]: Finished building task graph [  0.00s]
+13:27:34.863067 [info ]: Started rendering (1 nodes)
+13:27:34.863085 [info ]: Started model citibike_dataset.stg_citibike__trips
+13:27:34.863093 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+13:27:34.864392 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+13:27:34.864496 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:27:34.864511 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+13:27:34.864525 [info ]: Started analyzing (1 nodes)
+13:27:34.864531 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+13:27:34.864783 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:27:34.864791 [info ]: Finished analyzing [  0.00s] (1 nodes, 0 skipped, 0 errors)
+13:27:34.864797 [info ]:  Succeeded [  0.00s] model citibike_dataset.stg_citibike__trips (view)
+13:27:34.869026 [info ]: Started scheduling
+13:27:34.869181 [info ]: Finished scheduling [  0.00s]
+13:27:34.870661 [info ]: Cached model count updated: 8 models (accurate)
+13:27:36.379140 [info ]: Started loading project
+13:27:36.379578 [info ]: Loading ~/.dbt/profiles.yml
+13:27:36.404019 [info ]: Cached model count updated: 8 models (estimate)
+13:27:36.404039 [info ]: Cached model count updated: 8 models (accurate)
+13:27:36.404070 [info ]: Started scheduling
+13:27:36.404146 [info ]: Finished scheduling [  0.00s]
+13:27:36.404159 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+13:27:36.405290 [info ]: Started deferring state
+13:27:36.405310 [info ]: Finished deferring state [  0.00s]
+13:27:36.405596 [debug]:    Started downloading relations (1 items)
+13:27:36.405650 [info ]: Finished loading project [  0.03s]
+13:27:39.540348 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+13:27:39.540489 [debug]:   Finished [  3.13s] downloading relations (1 items)
+13:27:39.573940 [info ]: Started building task graph
+13:27:39.574013 [info ]: Finished building task graph [  0.00s]
+13:27:39.580300 [info ]: Started rendering (8 nodes)
+13:27:39.580318 [info ]: Started model citibike_dataset.dim_stations
+13:27:39.580326 [debug]: Started rendering model citibike_dataset.dim_stations
+13:27:39.580342 [info ]: Started model citibike_dataset.agg_trips_daily
+13:27:39.580348 [debug]: Started rendering model citibike_dataset.agg_trips_daily
+13:27:39.580356 [info ]: Started model citibike_dataset.agg_trips_by_station_hour
+13:27:39.580361 [debug]: Started rendering model citibike_dataset.agg_trips_by_station_hour
+13:27:39.580368 [info ]: Started model citibike_dataset.fct_trips
+13:27:39.580373 [debug]: Started rendering model citibike_dataset.fct_trips
+13:27:39.580381 [info ]: Started model citibike_dataset.int_citibike__trips_deduplicated
+13:27:39.580390 [debug]: Started rendering model citibike_dataset.int_citibike__trips_deduplicated
+13:27:39.580406 [info ]: Started model citibike_dataset.stg_citibike__trips
+13:27:39.580415 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+13:27:39.580773 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_by_station_hour at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_by_station_hour.sql
+13:27:39.580778 [debug]: Compiled SQL for node model.citibike_dbt_2526.dim_stations at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\dim_stations.sql
+13:27:39.580832 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+13:27:39.580857 [info ]: Started analyzing (8 nodes)
+13:27:39.580865 [debug]: Started analyzing model citibike_dataset.agg_trips_by_station_hour
+13:27:39.580887 [debug]: Finished rendering [  0.00s] model citibike_dataset.dim_stations [success]
+13:27:39.580901 [debug]: Started analyzing model citibike_dataset.dim_stations
+13:27:39.580924 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_daily at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_daily.sql
+13:27:39.580952 [debug]: Compiled SQL for node model.citibike_dbt_2526.fct_trips at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+13:27:39.580952 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_deduplicated at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_deduplicated.sql
+13:27:39.580972 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_daily [success]
+13:27:39.580991 [debug]: Started analyzing model citibike_dataset.agg_trips_daily
+13:27:39.581007 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+13:27:39.581011 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+13:27:39.581023 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_deduplicated
+13:27:39.581042 [info ]: Started model citibike_dataset.int_citibike__stations_unified
+13:27:39.581054 [debug]: Started rendering model citibike_dataset.int_citibike__stations_unified
+13:27:39.581069 [info ]: Started model citibike_dataset.int_citibike__trips_enriched
+13:27:39.581079 [debug]: Started rendering model citibike_dataset.int_citibike__trips_enriched
+13:27:39.581094 [debug]: Finished rendering [  0.00s] model citibike_dataset.fct_trips [success]
+13:27:39.581105 [debug]: Started analyzing model citibike_dataset.fct_trips
+13:27:39.581121 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:27:39.581134 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+13:27:39.581151 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+13:27:39.581161 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_by_station_hour (table)
+13:27:39.581179 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_daily [success]
+13:27:39.581189 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_daily (table)
+13:27:39.581256 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+13:27:39.581273 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__trips_deduplicated (ephemeral)
+13:27:39.581292 [debug]: Finished analyzing [  0.00s] model citibike_dataset.fct_trips [success]
+13:27:39.581304 [info ]:  Succeeded [-------] model citibike_dataset.fct_trips (incremental)
+13:27:39.581318 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:27:39.581327 [info ]:  Succeeded [-------] model citibike_dataset.stg_citibike__trips (view)
+13:27:39.581364 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__stations_unified at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__stations_unified.sql
+13:27:39.581398 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+13:27:39.581415 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_enriched at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+13:27:39.581417 [debug]: Started analyzing model citibike_dataset.int_citibike__stations_unified
+13:27:39.581454 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+13:27:39.581468 [info ]: Finished rendering [  0.00s] (8 nodes, 0 skipped, 0 errors)
+13:27:39.581478 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_enriched
+13:27:39.581729 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+13:27:39.581744 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__stations_unified (table)
+13:27:39.582453 [debug]: Finished analyzing [  0.00s] model citibike_dataset.dim_stations [success]
+13:27:39.582467 [info ]:  Succeeded [  0.00s] model citibike_dataset.dim_stations (table)
+13:27:39.583122 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+13:27:39.583132 [info ]: Finished analyzing [  0.00s] (8 nodes, 0 skipped, 0 errors)
+13:27:39.583137 [info ]:  Succeeded [  0.00s] model citibike_dataset.int_citibike__trips_enriched (table)
+13:27:39.587451 [info ]: Started scheduling
+13:27:39.587498 [info ]: Finished scheduling [  0.00s]
+13:27:39.588199 [info ]: Cached model count updated: 8 models (accurate)
+13:31:36.299253 [info ]: Started loading project
+13:31:36.299860 [info ]: Loading ~/.dbt/profiles.yml
+13:31:36.328783 [info ]: Cached model count updated: 8 models (estimate)
+13:31:36.328802 [info ]: Cached model count updated: 8 models (accurate)
+13:31:36.328836 [info ]: Started scheduling
+13:31:36.328885 [info ]: Finished scheduling [  0.00s]
+13:31:36.328898 [debug]: Compilation - 0 nodes selected: {}
+13:31:36.328915 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.citibike_dbt_2526.dev_Citibike2526' does not match any enabled nodes
+13:31:36.328927 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+13:31:36.329962 [info ]: Started deferring state
+13:31:36.329977 [info ]: Finished deferring state [  0.00s]
+13:31:36.364602 [info ]: Started building task graph
+13:31:36.364628 [info ]: Finished building task graph [  0.00s]
+13:31:36.374541 [info ]: Started scheduling
+13:31:36.374584 [info ]: Finished scheduling [  0.00s]
+13:31:36.374683 [info ]: Finished loading project [  0.08s]
+13:31:36.375102 [info ]: Cached model count updated: 8 models (accurate)
+13:31:37.978672 [info ]: Started loading project
+13:31:37.979333 [info ]: Loading ~/.dbt/profiles.yml
+13:31:38.005146 [info ]: Cached model count updated: 8 models (estimate)
+13:31:38.005164 [info ]: Cached model count updated: 8 models (accurate)
+13:31:38.005191 [info ]: Started scheduling
+13:31:38.005262 [info ]: Finished scheduling [  0.00s]
+13:31:38.005274 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+13:31:38.006385 [info ]: Started deferring state
+13:31:38.006407 [info ]: Finished deferring state [  0.00s]
+13:31:38.006538 [debug]:    Started downloading relations (1 items)
+13:31:38.006577 [info ]: Finished loading project [  0.03s]
+13:31:41.256836 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+13:31:41.256979 [debug]:   Finished [  3.25s] downloading relations (1 items)
+13:31:41.288721 [info ]: Started building task graph
+13:31:41.288794 [info ]: Finished building task graph [  0.00s]
+13:31:41.294958 [info ]: Started rendering (8 nodes)
+13:31:41.294975 [info ]: Started model citibike_dataset.dim_stations
+13:31:41.294983 [debug]: Started rendering model citibike_dataset.dim_stations
+13:31:41.294999 [info ]: Started model citibike_dataset.agg_trips_daily
+13:31:41.295005 [debug]: Started rendering model citibike_dataset.agg_trips_daily
+13:31:41.295012 [info ]: Started model citibike_dataset.agg_trips_by_station_hour
+13:31:41.295018 [debug]: Started rendering model citibike_dataset.agg_trips_by_station_hour
+13:31:41.295025 [info ]: Started model citibike_dataset.fct_trips
+13:31:41.295029 [debug]: Started rendering model citibike_dataset.fct_trips
+13:31:41.295037 [info ]: Started model citibike_dataset.int_citibike__trips_deduplicated
+13:31:41.295041 [debug]: Started rendering model citibike_dataset.int_citibike__trips_deduplicated
+13:31:41.295047 [info ]: Started model citibike_dataset.stg_citibike__trips
+13:31:41.295051 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+13:31:41.295390 [debug]: Compiled SQL for node model.citibike_dbt_2526.dim_stations at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\dim_stations.sql
+13:31:41.295450 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_daily at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_daily.sql
+13:31:41.295469 [debug]: Finished rendering [  0.00s] model citibike_dataset.dim_stations [success]
+13:31:41.295507 [info ]: Started analyzing (8 nodes)
+13:31:41.295516 [debug]: Started analyzing model citibike_dataset.dim_stations
+13:31:41.295536 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_daily [success]
+13:31:41.295551 [debug]: Started analyzing model citibike_dataset.agg_trips_daily
+13:31:41.295582 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_by_station_hour at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_by_station_hour.sql
+13:31:41.295585 [debug]: Compiled SQL for node model.citibike_dbt_2526.fct_trips at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+13:31:41.295629 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+13:31:41.295637 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_deduplicated at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_deduplicated.sql
+13:31:41.295645 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+13:31:41.295651 [debug]: Started analyzing model citibike_dataset.agg_trips_by_station_hour
+13:31:41.295668 [debug]: Finished rendering [  0.00s] model citibike_dataset.fct_trips [success]
+13:31:41.295678 [debug]: Started analyzing model citibike_dataset.fct_trips
+13:31:41.295688 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+13:31:41.295699 [info ]: Started model citibike_dataset.int_citibike__stations_unified
+13:31:41.295709 [debug]: Started rendering model citibike_dataset.int_citibike__stations_unified
+13:31:41.295719 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_deduplicated
+13:31:41.295734 [info ]: Started model citibike_dataset.int_citibike__trips_enriched
+13:31:41.295744 [debug]: Started rendering model citibike_dataset.int_citibike__trips_enriched
+13:31:41.295759 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:31:41.295772 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+13:31:41.295811 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_daily [success]
+13:31:41.295831 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_daily (table)
+13:31:41.295846 [debug]: Finished analyzing [  0.00s] model citibike_dataset.fct_trips [success]
+13:31:41.295853 [info ]:  Succeeded [-------] model citibike_dataset.fct_trips (incremental)
+13:31:41.295863 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+13:31:41.295869 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_by_station_hour (table)
+13:31:41.295923 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+13:31:41.295938 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__trips_deduplicated (ephemeral)
+13:31:41.295987 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+13:31:41.296003 [info ]:  Succeeded [-------] model citibike_dataset.stg_citibike__trips (view)
+13:31:41.296013 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__stations_unified at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__stations_unified.sql
+13:31:41.296051 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+13:31:41.296069 [debug]: Started analyzing model citibike_dataset.int_citibike__stations_unified
+13:31:41.296076 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_enriched at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+13:31:41.296108 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+13:31:41.296123 [info ]: Finished rendering [  0.00s] (8 nodes, 0 skipped, 0 errors)
+13:31:41.296134 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_enriched
+13:31:41.296317 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+13:31:41.296329 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__stations_unified (table)
+13:31:41.297099 [debug]: Finished analyzing [  0.00s] model citibike_dataset.dim_stations [success]
+13:31:41.297114 [info ]:  Succeeded [  0.00s] model citibike_dataset.dim_stations (table)
+13:31:41.297735 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+13:31:41.297744 [info ]: Finished analyzing [  0.00s] (8 nodes, 0 skipped, 0 errors)
+13:31:41.297749 [info ]:  Succeeded [  0.00s] model citibike_dataset.int_citibike__trips_enriched (table)
+13:31:41.301057 [info ]: Started scheduling
+13:31:41.301097 [info ]: Finished scheduling [  0.00s]
+13:31:41.301872 [info ]: Cached model count updated: 8 models (accurate)
+22:14:10.253302 [info ]: Started loading project
+22:14:10.254364 [info ]: Loading ~/.dbt/profiles.yml
+22:14:10.303727 [info ]: Cached model count updated: 8 models (estimate)
+22:14:10.303750 [info ]: Cached model count updated: 8 models (accurate)
+22:14:10.303824 [info ]: Started scheduling
+22:14:10.303961 [info ]: Finished scheduling [  0.00s]
+22:14:10.303985 [debug]: Compilation - 0 nodes selected: {}
+22:14:10.304038 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '+source:citibike_dbt_2526.citibike_dbt_2526.dev_Citibike2526' does not match any enabled nodes
+22:14:10.304061 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+22:14:10.305964 [info ]: Started deferring state
+22:14:10.306005 [info ]: Finished deferring state [  0.00s]
+22:14:10.355334 [info ]: Started building task graph
+22:14:10.355394 [info ]: Finished building task graph [  0.00s]
+22:14:10.367291 [info ]: Started scheduling
+22:14:10.367336 [info ]: Finished scheduling [  0.00s]
+22:14:10.367487 [info ]: Finished loading project [  0.11s]
+22:14:10.368045 [info ]: Cached model count updated: 8 models (accurate)
+22:14:12.012299 [info ]: Started loading project
+22:14:12.012843 [info ]: Loading ~/.dbt/profiles.yml
+22:14:12.037957 [info ]: Cached model count updated: 8 models (estimate)
+22:14:12.037975 [info ]: Cached model count updated: 8 models (accurate)
+22:14:12.038005 [info ]: Started scheduling
+22:14:12.038101 [info ]: Finished scheduling [  0.00s]
+22:14:12.038113 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+22:14:12.039209 [info ]: Started deferring state
+22:14:12.039230 [info ]: Finished deferring state [  0.00s]
+22:14:12.039368 [debug]:    Started downloading relations (1 items)
+22:14:12.039430 [info ]: Finished loading project [  0.03s]
+22:14:15.598682 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+22:14:15.598931 [debug]:   Finished [  3.56s] downloading relations (1 items)
+22:14:15.631662 [info ]: Started building task graph
+22:14:15.631768 [info ]: Finished building task graph [  0.00s]
+22:14:15.638670 [info ]: Started rendering (8 nodes)
+22:14:15.638705 [info ]: Started model citibike_dataset.dim_stations
+22:14:15.638724 [debug]: Started rendering model citibike_dataset.dim_stations
+22:14:15.638749 [info ]: Started model citibike_dataset.agg_trips_daily
+22:14:15.638756 [debug]: Started rendering model citibike_dataset.agg_trips_daily
+22:14:15.638766 [info ]: Started model citibike_dataset.agg_trips_by_station_hour
+22:14:15.638774 [debug]: Started rendering model citibike_dataset.agg_trips_by_station_hour
+22:14:15.638784 [info ]: Started model citibike_dataset.fct_trips
+22:14:15.638789 [debug]: Started rendering model citibike_dataset.fct_trips
+22:14:15.638801 [info ]: Started model citibike_dataset.int_citibike__trips_deduplicated
+22:14:15.638809 [debug]: Started rendering model citibike_dataset.int_citibike__trips_deduplicated
+22:14:15.638824 [info ]: Started model citibike_dataset.stg_citibike__trips
+22:14:15.638836 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+22:14:15.639333 [debug]: Compiled SQL for node model.citibike_dbt_2526.dim_stations at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\dim_stations.sql
+22:14:15.639351 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_by_station_hour at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_by_station_hour.sql
+22:14:15.639333 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_daily at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_daily.sql
+22:14:15.639486 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+22:14:15.639525 [info ]: Started analyzing (8 nodes)
+22:14:15.639534 [debug]: Started analyzing model citibike_dataset.agg_trips_by_station_hour
+22:14:15.639543 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_deduplicated at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_deduplicated.sql
+22:14:15.639548 [debug]: Compiled SQL for node model.citibike_dbt_2526.fct_trips at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+22:14:15.639559 [debug]: Finished rendering [  0.00s] model citibike_dataset.agg_trips_daily [success]
+22:14:15.639569 [debug]: Started analyzing model citibike_dataset.agg_trips_daily
+22:14:15.639585 [debug]: Finished rendering [  0.00s] model citibike_dataset.dim_stations [success]
+22:14:15.639595 [debug]: Started analyzing model citibike_dataset.dim_stations
+22:14:15.639607 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+22:14:15.639619 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+22:14:15.639623 [info ]: Started model citibike_dataset.int_citibike__stations_unified
+22:14:15.639633 [debug]: Started rendering model citibike_dataset.int_citibike__stations_unified
+22:14:15.639649 [info ]: Started model citibike_dataset.int_citibike__trips_enriched
+22:14:15.639663 [debug]: Started rendering model citibike_dataset.int_citibike__trips_enriched
+22:14:15.639678 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_deduplicated
+22:14:15.639702 [debug]: Finished rendering [  0.00s] model citibike_dataset.fct_trips [success]
+22:14:15.639715 [debug]: Started analyzing model citibike_dataset.fct_trips
+22:14:15.639728 [debug]: Finished rendering [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+22:14:15.639739 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+22:14:15.639996 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_enriched at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+22:14:15.640147 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__stations_unified at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__stations_unified.sql
+22:14:15.640210 [debug]: Finished analyzing [  0.00s] model citibike_dataset.fct_trips [success]
+22:14:15.640228 [info ]:  Succeeded [-------] model citibike_dataset.fct_trips (incremental)
+22:14:15.640248 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_by_station_hour [success]
+22:14:15.640257 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_by_station_hour (table)
+22:14:15.640270 [debug]: Finished analyzing [  0.00s] model citibike_dataset.agg_trips_daily [success]
+22:14:15.640277 [info ]:  Succeeded [-------] model citibike_dataset.agg_trips_daily (table)
+22:14:15.640291 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+22:14:15.640313 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_enriched
+22:14:15.640336 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+22:14:15.640346 [info ]: Finished rendering [  0.00s] (8 nodes, 0 skipped, 0 errors)
+22:14:15.640354 [debug]: Started analyzing model citibike_dataset.int_citibike__stations_unified
+22:14:15.640374 [debug]: Finished analyzing [  0.00s] model citibike_dataset.stg_citibike__trips [success]
+22:14:15.640385 [info ]:  Succeeded [-------] model citibike_dataset.stg_citibike__trips (view)
+22:14:15.640400 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+22:14:15.640411 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__trips_deduplicated (ephemeral)
+22:14:15.640718 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+22:14:15.640735 [info ]:  Succeeded [-------] model citibike_dataset.int_citibike__stations_unified (table)
+22:14:15.641697 [debug]: Finished analyzing [  0.00s] model citibike_dataset.dim_stations [success]
+22:14:15.641714 [info ]:  Succeeded [  0.00s] model citibike_dataset.dim_stations (table)
+22:14:15.642295 [debug]: Finished analyzing [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+22:14:15.642305 [info ]: Finished analyzing [  0.00s] (8 nodes, 0 skipped, 0 errors)
+22:14:15.642312 [info ]:  Succeeded [  0.00s] model citibike_dataset.int_citibike__trips_enriched (table)
+22:14:15.645660 [info ]: Started scheduling
+22:14:15.645702 [info ]: Finished scheduling [  0.00s]
+22:14:15.646424 [info ]: Cached model count updated: 8 models (accurate)
+22:22:24.995474 [info ]: Loading ~/.dbt/profiles.yml
+22:22:25.015058 [info ]: Started loading project
+22:22:25.015618 [info ]: Loading ~/.dbt/profiles.yml
+22:22:25.021856 [info ]: Started loading project
+22:22:25.022321 [info ]: Loading ~/.dbt/profiles.yml
+22:22:25.022341 [info ]: Finished loading project [  0.01s]
+22:22:25.025785 [info ]:    Started resolving packages from packages.yml
+22:22:25.235573 [info ]:   Finished [  0.21s] resolving packages from packages.yml (1 items)
+22:22:25.235755 [debug]:    Started loading packages
+22:22:25.242688 [debug]:     Loaded [  0.01s] packages
+22:22:25.243250 [info ]: Finished loading project [  0.22s]
+22:22:25.243507 [info ]: Started parsing
+22:22:25.277207 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.00s]
+22:22:25.277484 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+22:22:25.277852 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.00s]
+22:22:25.278148 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+22:22:25.279842 [debug]: Finished parsing models\intermediate\int_citibike__stations_unified.sql [  0.00s]
+22:22:25.280412 [debug]: Finished parsing models\intermediate\int_citibike__trips_deduplicated.sql [  0.00s]
+22:22:25.280927 [debug]: Finished parsing models\intermediate\int_citibike__trips_enriched.sql [  0.00s]
+22:22:25.281434 [debug]: Finished parsing models\marts\mobility\agg_trips_by_station_hour.sql [  0.00s]
+22:22:25.281903 [debug]: Finished parsing models\marts\mobility\agg_trips_daily.sql [  0.00s]
+22:22:25.282334 [debug]: Finished parsing models\marts\mobility\dim_stations.sql [  0.00s]
+22:22:25.282903 [debug]: Finished parsing models\marts\mobility\fct_trips.sql [  0.00s]
+22:22:25.283327 [debug]: Finished parsing models\staging\citibike\stg_citibike__trips.sql [  0.00s]
+22:22:25.289867 [info ]: Finished parsing [  0.05s]
+22:22:25.292359 [info ]: DOWNLOADING deferral manifest
+22:22:26.510487 [info ]: DOWNLOADED deferral manifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target/.lsp\dbt_cloud_defer\manifest.json
+22:22:26.531616 [info ]: Cached model count updated: 8 models (estimate)
+22:22:26.531633 [info ]: Cached model count updated: 8 models (accurate)
+22:22:26.531661 [info ]: Started scheduling
+22:22:26.531693 [info ]: Finished scheduling [  0.00s]
+22:22:26.531703 [debug]: Compilation - 0 nodes selected: {}
+22:22:26.531719 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+22:22:26.531732 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+22:22:26.531738 [info ]: Started scheduling
+22:22:26.531793 [info ]: Finished scheduling [  0.00s]
+22:22:26.531851 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "local-tempo-493308-m1", schema: "citibike_dataset", table: "dev_Citibike2526" }) and interval: None
+22:22:26.533094 [info ]: Started deferring state
+22:22:26.533109 [info ]: Finished deferring state [  0.00s]
+22:22:26.566100 [info ]: Started building task graph
+22:22:26.566128 [info ]: Finished building task graph [  0.00s]
+22:22:26.579542 [info ]: Started scheduling
+22:22:26.579583 [info ]: Finished scheduling [  0.00s]
+22:22:26.580124 [info ]: Cached model count updated: 8 models (accurate)
+22:22:28.238203 [info ]: Started loading project
+22:22:28.238661 [info ]: Loading ~/.dbt/profiles.yml
+22:22:28.261482 [info ]: Cached model count updated: 8 models (estimate)
+22:22:28.261499 [info ]: Cached model count updated: 8 models (accurate)
+22:22:28.261527 [info ]: Started scheduling
+22:22:28.261602 [info ]: Finished scheduling [  0.00s]
+22:22:28.261615 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+22:22:28.262682 [info ]: Started deferring state
+22:22:28.262700 [info ]: Finished deferring state [  0.00s]
+22:22:28.262821 [debug]:    Started downloading relations (1 items)
+22:22:28.262858 [info ]: Finished loading project [  0.02s]
+22:22:31.343218 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+22:22:31.343368 [debug]:   Finished [  3.08s] downloading relations (1 items)
+==================== 2026-07-23T14:16:06.977518Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-07-23T14:16:06.987575Z | 18a5a3ab-a446-4111-829b-cea520b8d4fc ====================
+14:16:06.988483 [info ]: Starting dbt LSP server
+14:16:06.989175 [info ]: Connecting to LSP client on port 8000
+14:16:06.995795 [info ]: Successfully connected to LSP client
+14:16:06.996178 [info ]: Creating LSP service...
+14:16:07.172266 [info ]: Creating LSP server...
+14:16:07.172285 [info ]: Starting LSP server...
+14:16:07.419571 [info ]: Loading ~/.dbt/profiles.yml
+14:16:07.525378 [info ]: Started loading project
+14:16:07.538647 [info ]: Loading ~/.dbt/profiles.yml
+14:16:07.580818 [info ]:    Started resolving packages from packages.yml
+14:16:07.882241 [info ]:   Finished [  0.30s] resolving packages from packages.yml (1 items)
+14:16:07.884814 [debug]:    Started loading packages
+14:16:07.909897 [debug]:     Loaded [  0.03s] packages
+14:16:07.924335 [info ]: Finished loading project [  0.40s]
+14:16:07.932633 [info ]: Started parsing
+14:16:08.079398 [debug]: Finished parsing models\intermediate\_citibike__intermediate__models.yml [  0.01s]
+14:16:08.080512 [debug]: Finished parsing models\marts\mobility\_mobility__models.yml [  0.00s]
+14:16:08.087653 [debug]: Finished parsing models\staging\citibike\_citibike__sources.yml [  0.01s]
+14:16:08.088196 [debug]: Finished parsing models\staging\citibike\_citibike__staging__models.yml [  0.00s]
+14:16:08.127047 [debug]: Finished parsing models\intermediate\int_citibike__stations_unified.sql [  0.03s]
+14:16:08.128360 [debug]: Finished parsing models\intermediate\int_citibike__trips_deduplicated.sql [  0.00s]
+14:16:08.133138 [debug]: Finished parsing models\intermediate\int_citibike__trips_enriched.sql [  0.00s]
+14:16:08.133850 [debug]: Finished parsing models\marts\mobility\agg_trips_by_station_hour.sql [  0.00s]
+14:16:08.134557 [debug]: Finished parsing models\marts\mobility\agg_trips_daily.sql [  0.00s]
+14:16:08.135557 [debug]: Finished parsing models\marts\mobility\dim_stations.sql [  0.00s]
+14:16:08.140095 [debug]: Finished parsing models\marts\mobility\fct_trips.sql [  0.00s]
+14:16:08.141417 [debug]: Finished parsing models\staging\citibike\stg_citibike__trips.sql [  0.00s]
+14:16:08.183582 [info ]: Finished parsing [  0.25s]
+14:16:08.205598 [info ]: DOWNLOADING deferral manifest
+14:16:09.462572 [info ]: DOWNLOADED deferral manifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target/.lsp\dbt_cloud_defer\manifest.json
+14:16:09.546922 [info ]: Cached model count updated: 8 models (estimate)
+14:16:09.546946 [info ]: Cached model count updated: 8 models (accurate)
+14:16:09.561208 [info ]: Started scheduling
+14:16:09.576483 [info ]: Finished scheduling [  0.02s]
+14:16:09.576526 [debug]: Compilation - 0 nodes selected: {}
+14:16:09.577285 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+14:16:09.578261 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+14:16:09.578501 [info ]: Started scheduling
+14:16:09.581091 [info ]: Finished scheduling [  0.00s]
+14:16:09.598541 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "local-tempo-493308-m1", schema: "citibike_dataset", table: "dev_Citibike2526" }) and interval: None
+14:16:09.637832 [info ]: Started deferring state
+14:16:09.647967 [info ]: Finished deferring state [  0.01s]
+14:16:09.718647 [debug]: License loaded from file C:\Users\Elisa\.dbt\license.70471823552246 is invalid (License expired; try running dbt login or downloading dbt_cloud.yml), skipping
+14:16:09.727752 [debug]: Requesting license from https://pu062.us1.dbt.com/api/private/accounts/70471823552246/feature-licenses/ with 1 key IDs: ["fusion-prod-2025-11-20"]
+14:16:10.155092 [debug]: License successfully retrieved from remote
+14:16:10.157522 [debug]: License loaded from remote server pu062.us1.dbt.com
+14:16:10.158175 [debug]: License cached to file for account 70471823552246
+14:16:10.277109 [info ]: Started building task graph
+14:16:10.287389 [info ]: Finished building task graph [  0.01s]
+14:16:10.471102 [info ]: Started scheduling
+14:16:10.471161 [info ]: Finished scheduling [  0.00s]
+14:16:10.472403 [info ]: Cached model count updated: 8 models (accurate)
+14:16:12.081912 [info ]: Started loading project
+14:16:12.082423 [info ]: Loading ~/.dbt/profiles.yml
+14:16:12.117618 [info ]: Cached model count updated: 8 models (estimate)
+14:16:12.117644 [info ]: Cached model count updated: 8 models (accurate)
+14:16:12.117688 [info ]: Started scheduling
+14:16:12.117792 [info ]: Finished scheduling [  0.00s]
+14:16:12.117812 [debug]: Compilation - 8 nodes selected: {"model.citibike_dbt_2526.agg_trips_by_station_hour", "model.citibike_dbt_2526.agg_trips_daily", "model.citibike_dbt_2526.dim_stations", "model.citibike_dbt_2526.fct_trips", "model.citibike_dbt_2526.int_citibike__stations_unified", "model.citibike_dbt_2526.int_citibike__trips_deduplicated", "model.citibike_dbt_2526.int_citibike__trips_enriched", "model.citibike_dbt_2526.stg_citibike__trips"}
+14:16:12.119581 [info ]: Started deferring state
+14:16:12.119609 [info ]: Finished deferring state [  0.00s]
+14:16:12.120821 [debug]:    Started downloading relations (1 items)
+14:16:12.124006 [info ]: Finished loading project [  0.04s]
+14:16:15.802594 [debug]: Query executed on node unknown:
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    table_type
+FROM 
+    `local-tempo-493308-m1`.`citibike_dataset`.INFORMATION_SCHEMA.TABLES
+14:16:15.803341 [debug]:   Finished [  3.68s] downloading relations (1 items)
+14:16:15.837916 [info ]: Started building task graph
+14:16:15.840485 [info ]: Finished building task graph [  0.00s]
+14:16:15.852220 [info ]: Started rendering (8 nodes)
+14:16:15.853235 [info ]: Started model citibike_dataset.dim_stations
+14:16:15.853264 [debug]: Started rendering model citibike_dataset.dim_stations
+14:16:15.853494 [info ]: Started model citibike_dataset.agg_trips_daily
+14:16:15.853502 [debug]: Started rendering model citibike_dataset.agg_trips_daily
+14:16:15.853513 [info ]: Started model citibike_dataset.agg_trips_by_station_hour
+14:16:15.853518 [debug]: Started rendering model citibike_dataset.agg_trips_by_station_hour
+14:16:15.853525 [info ]: Started model citibike_dataset.fct_trips
+14:16:15.853531 [debug]: Started rendering model citibike_dataset.fct_trips
+14:16:15.853539 [info ]: Started model citibike_dataset.int_citibike__trips_deduplicated
+14:16:15.853569 [debug]: Started rendering model citibike_dataset.int_citibike__trips_deduplicated
+14:16:15.853580 [info ]: Started model citibike_dataset.stg_citibike__trips
+14:16:15.853585 [debug]: Started rendering model citibike_dataset.stg_citibike__trips
+14:16:15.864846 [debug]: Compiled SQL for node model.citibike_dbt_2526.dim_stations at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\dim_stations.sql
+14:16:15.864876 [debug]: Compiled SQL for node model.citibike_dbt_2526.stg_citibike__trips at target\.lsp\compiled\citibike_dbt_2526\models\staging\citibike\stg_citibike__trips.sql
+14:16:15.864846 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_deduplicated at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_deduplicated.sql
+14:16:15.864867 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_by_station_hour at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_by_station_hour.sql
+14:16:15.864884 [debug]: Compiled SQL for node model.citibike_dbt_2526.agg_trips_daily at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\agg_trips_daily.sql
+14:16:15.867292 [debug]: Finished rendering [  0.01s] model citibike_dataset.agg_trips_by_station_hour [success]
+14:16:15.867799 [info ]: Started analyzing (8 nodes)
+14:16:15.867818 [debug]: Started analyzing model citibike_dataset.agg_trips_by_station_hour
+14:16:15.867859 [debug]: Finished rendering [  0.01s] model citibike_dataset.dim_stations [success]
+14:16:15.867878 [debug]: Started analyzing model citibike_dataset.dim_stations
+14:16:15.867902 [debug]: Finished rendering [  0.01s] model citibike_dataset.stg_citibike__trips [success]
+14:16:15.867917 [debug]: Started analyzing model citibike_dataset.stg_citibike__trips
+14:16:15.867940 [debug]: Finished rendering [  0.01s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+14:16:15.868179 [info ]: Started model citibike_dataset.int_citibike__trips_enriched
+14:16:15.868192 [debug]: Started rendering model citibike_dataset.int_citibike__trips_enriched
+14:16:15.868205 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_deduplicated
+14:16:15.868221 [info ]: Started model citibike_dataset.int_citibike__stations_unified
+14:16:15.868248 [debug]: Started rendering model citibike_dataset.int_citibike__stations_unified
+14:16:15.868269 [debug]: Finished rendering [  0.01s] model citibike_dataset.agg_trips_daily [success]
+14:16:15.868285 [debug]: Started analyzing model citibike_dataset.agg_trips_daily
+14:16:15.872616 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__trips_enriched at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+14:16:15.872641 [debug]: Compiled SQL for node model.citibike_dbt_2526.int_citibike__stations_unified at target\.lsp\compiled\citibike_dbt_2526\models\intermediate\int_citibike__stations_unified.sql
+14:16:15.872956 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__trips_enriched [success]
+14:16:15.873005 [debug]: Started analyzing model citibike_dataset.int_citibike__trips_enriched
+14:16:15.873040 [debug]: Finished rendering [  0.00s] model citibike_dataset.int_citibike__stations_unified [success]
+14:16:15.873056 [debug]: Started analyzing model citibike_dataset.int_citibike__stations_unified
+14:16:15.889422 [debug]: Compiled SQL for node model.citibike_dbt_2526.fct_trips at target\.lsp\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+14:16:15.889995 [debug]: Finished rendering [  0.04s] model citibike_dataset.fct_trips [success]
+14:16:15.890016 [info ]: Finished rendering [  0.04s] (8 nodes, 0 skipped, 0 errors)
+14:16:15.890036 [debug]: Started analyzing model citibike_dataset.fct_trips
+14:16:15.902305 [debug]: Finished analyzing [  0.03s] model citibike_dataset.agg_trips_by_station_hour [success]
+14:16:15.902330 [info ]:  Succeeded [  0.05s] model citibike_dataset.agg_trips_by_station_hour (table)
+14:16:15.902350 [debug]: Finished analyzing [  0.03s] model citibike_dataset.int_citibike__stations_unified [success]
+14:16:15.902359 [info ]:  Succeeded [  0.03s] model citibike_dataset.int_citibike__stations_unified (table)
+14:16:15.902368 [debug]: Finished analyzing [  0.03s] model citibike_dataset.int_citibike__trips_deduplicated [success]
+14:16:15.902375 [info ]:  Succeeded [  0.05s] model citibike_dataset.int_citibike__trips_deduplicated (ephemeral)
+14:16:15.902386 [debug]: Finished analyzing [  0.01s] model citibike_dataset.fct_trips [success]
+14:16:15.902393 [info ]:  Succeeded [  0.05s] model citibike_dataset.fct_trips (incremental)
+14:16:15.902404 [debug]: Finished analyzing [  0.03s] model citibike_dataset.agg_trips_daily [success]
+14:16:15.902410 [info ]:  Succeeded [  0.05s] model citibike_dataset.agg_trips_daily (table)
+14:16:15.902704 [debug]: Finished analyzing [  0.03s] model citibike_dataset.stg_citibike__trips [success]
+14:16:15.902718 [info ]:  Succeeded [  0.05s] model citibike_dataset.stg_citibike__trips (view)
+14:16:15.904031 [debug]: Finished analyzing [  0.04s] model citibike_dataset.dim_stations [success]
+14:16:15.904042 [info ]:  Succeeded [  0.05s] model citibike_dataset.dim_stations (table)
+14:16:15.914520 [debug]: Finished analyzing [  0.04s] model citibike_dataset.int_citibike__trips_enriched [success]
+14:16:15.914539 [info ]: Finished analyzing [  0.05s] (8 nodes, 0 skipped, 0 errors)
+14:16:15.914548 [info ]:  Succeeded [  0.04s] model citibike_dataset.int_citibike__trips_enriched (table)
+14:16:15.919102 [info ]: Started scheduling
+14:16:15.919145 [info ]: Finished scheduling [  0.00s]
+14:16:15.919836 [info ]: Cached model count updated: 8 models (accurate)

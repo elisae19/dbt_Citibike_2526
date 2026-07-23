@@ -34,13 +34,13 @@ enriched as (
         end as day_type,
 
         -- distance haversine approximative en km
-        2 * 6371 * asin(
-            sqrt(
-                pow(sin((radians(end_lat) - radians(start_lat)) / 2), 2) +
-                cos(radians(start_lat)) * cos(radians(end_lat)) *
-                pow(sin((radians(end_lng) - radians(start_lng)) / 2), 2)
-            )
-        ) as distance_km
+        {{ dbt_utils.haversine_distance(
+            'start_lat',
+            'start_lng',
+            'end_lat',
+            'end_lng',
+            'km'
+        ) }} as distance_km
 
     from trips
 

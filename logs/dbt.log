@@ -2940,3 +2940,628 @@ select * from renamed;
 [0m15:25:54.745990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027220DC8CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272229BFCB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272229BF680>]}
 [0m15:25:54.745990 [debug] [MainThread]: Flushing usage events
 [0m15:25:55.468327 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:19:35.332014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BC765BD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BC467FDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BC806AF00>]}
+
+
+============================== 00:19:35.332014 | 04490c5e-e907-405c-b469-3df51842305f ==============================
+[0m00:19:35.332014 [info ] [MainThread]: Running with dbt=1.11.12
+[0m00:19:35.332014 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Elisa\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select fct_trips', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Elisa\\Documents\\Portfolio project\\CITIBIKE2526\\CLAUDE dbt_citibike_project\\dbt_citibike\\logs'}
+[0m00:19:36.261192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '04490c5e-e907-405c-b469-3df51842305f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BC8A49DF0>]}
+[0m00:19:36.302824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '04490c5e-e907-405c-b469-3df51842305f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BE0F7F3B0>]}
+[0m00:19:36.302824 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m00:19:36.642794 [debug] [MainThread]: checksum: f368f5348cf42803b94ef7fb8257ecf3bf9a9a16dd9c8c51fe5172f2dbeb457f, vars: {}, profile: , target: , version: 1.11.12
+[0m00:19:36.864560 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:19:36.864560 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m00:19:36.864560 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:19:36.906745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '04490c5e-e907-405c-b469-3df51842305f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BE30562D0>]}
+[0m00:19:36.993270 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\manifest.json
+[0m00:19:36.995272 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\semantic_manifest.json
+[0m00:19:37.006785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '04490c5e-e907-405c-b469-3df51842305f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BE33A6AB0>]}
+[0m00:19:37.008786 [info ] [MainThread]: Found 8 models, 28 data tests, 1 source, 669 macros
+[0m00:19:37.008786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '04490c5e-e907-405c-b469-3df51842305f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BE2D44EF0>]}
+[0m00:19:37.010788 [info ] [MainThread]: 
+[0m00:19:37.010788 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:19:37.010788 [info ] [MainThread]: 
+[0m00:19:37.010788 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m00:19:37.012790 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_local-tempo-493308-m1'
+[0m00:19:37.012790 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:19:38.125937 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_local-tempo-493308-m1_citibike_dataset'
+[0m00:19:38.125937 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:19:39.082418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '04490c5e-e907-405c-b469-3df51842305f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BE2F74B60>]}
+[0m00:19:39.082418 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:19:39.112134 [debug] [Thread-3 (]: Began running node model.citibike_dbt_2526.fct_trips
+[0m00:19:39.112134 [info ] [Thread-3 (]: 1 of 1 START sql incremental model citibike_dataset.fct_trips .................. [RUN]
+[0m00:19:39.112134 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.citibike_dbt_2526.fct_trips'
+[0m00:19:39.112134 [debug] [Thread-3 (]: Began compiling node model.citibike_dbt_2526.fct_trips
+[0m00:19:39.132129 [debug] [Thread-3 (]: Writing injected SQL for node "model.citibike_dbt_2526.fct_trips"
+[0m00:19:39.133131 [debug] [Thread-3 (]: Began executing node model.citibike_dbt_2526.fct_trips
+[0m00:19:39.188802 [debug] [Thread-3 (]: Writing runtime sql for node "model.citibike_dbt_2526.fct_trips"
+[0m00:19:39.188802 [debug] [Thread-3 (]: On model.citibike_dbt_2526.fct_trips: /* {"app": "dbt", "dbt_version": "1.11.12", "profile_name": "citibike_dbt_2526", "target_name": "dev", "node_id": "model.citibike_dbt_2526.fct_trips"} */
+
+  
+    
+
+    create or replace table `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips`
+      
+    partition by timestamp_trunc(started_at, month)
+    cluster by start_station_id, rider_type
+
+    
+    OPTIONS()
+    as (
+      
+
+select
+    ride_id,
+    rideable_type,
+    rider_type,
+
+    started_at,
+    ended_at,
+    trip_duration_minutes,
+
+    start_station_id,
+    end_station_id,
+    is_round_trip,
+    distance_km,
+
+    start_day_of_week,
+    start_hour,
+    day_type
+
+from `local-tempo-493308-m1`.`citibike_dataset`.`int_citibike__trips_enriched`
+
+
+    );
+  
+[0m00:19:39.188802 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:19:40.339783 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=local-tempo-493308-m1&j=bq:US:dc1b89cc-a871-4464-8b8c-a4fbf78e5fb1&page=queryresults
+[0m00:19:40.339783 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=local-tempo-493308-m1&j=bq:US:dc1b89cc-a871-4464-8b8c-a4fbf78e5fb1&page=queryresults
+[0m00:19:40.339783 [debug] [Thread-3 (]: Database Error in model fct_trips (models\marts\mobility\fct_trips.sql)
+  Not found: Table local-tempo-493308-m1:citibike_dataset.int_citibike__trips_enriched was not found in location US
+  compiled code at target\run\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+[0m00:19:40.339783 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '04490c5e-e907-405c-b469-3df51842305f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BC7A88740>]}
+[0m00:19:40.339783 [error] [Thread-3 (]: 1 of 1 ERROR creating sql incremental model citibike_dataset.fct_trips ......... [[31mERROR[0m in 1.23s]
+[0m00:19:40.339783 [debug] [Thread-3 (]: Finished running node model.citibike_dbt_2526.fct_trips
+[0m00:19:40.351959 [debug] [Thread-9 (]: Marking all children of 'model.citibike_dbt_2526.fct_trips' to be skipped because of status 'error'.  Reason: Database Error in model fct_trips (models\marts\mobility\fct_trips.sql)
+  Not found: Table local-tempo-493308-m1:citibike_dataset.int_citibike__trips_enriched was not found in location US
+  compiled code at target\run\citibike_dbt_2526\models\marts\mobility\fct_trips.sql.
+[0m00:19:40.352864 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:19:40.386676 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:19:40.387686 [debug] [MainThread]: Connection 'list_local-tempo-493308-m1' was properly closed.
+[0m00:19:40.387686 [debug] [MainThread]: Connection 'list_local-tempo-493308-m1_citibike_dataset' was properly closed.
+[0m00:19:40.388277 [debug] [MainThread]: Connection 'model.citibike_dbt_2526.fct_trips' was properly closed.
+[0m00:19:40.388277 [info ] [MainThread]: 
+[0m00:19:40.388277 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 3.38 seconds (3.38s).
+[0m00:19:40.389334 [debug] [MainThread]: Command end result
+[0m00:19:40.443588 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\manifest.json
+[0m00:19:40.445606 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\semantic_manifest.json
+[0m00:19:40.452612 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\run_results.json
+[0m00:19:40.452612 [info ] [MainThread]: 
+[0m00:19:40.453624 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:19:40.453624 [info ] [MainThread]: 
+[0m00:19:40.453624 [error] [MainThread]: [31mFailure in model fct_trips (models\marts\mobility\fct_trips.sql)[0m
+[0m00:19:40.454659 [error] [MainThread]:   Database Error in model fct_trips (models\marts\mobility\fct_trips.sql)
+  Not found: Table local-tempo-493308-m1:citibike_dataset.int_citibike__trips_enriched was not found in location US
+  compiled code at target\run\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+[0m00:19:40.454659 [info ] [MainThread]: 
+[0m00:19:40.454659 [info ] [MainThread]:   compiled code at target\compiled\citibike_dbt_2526\models\marts\mobility\fct_trips.sql
+[0m00:19:40.455964 [info ] [MainThread]: 
+[0m00:19:40.455964 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m00:19:40.456967 [debug] [MainThread]: Command `dbt run` failed at 00:19:40.455964 after 5.26 seconds
+[0m00:19:40.456967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BC89B9460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BC7F4EAB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022BC7F4DD00>]}
+[0m00:19:40.456967 [debug] [MainThread]: Flushing usage events
+[0m00:19:41.152226 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:20:10.582869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198C18ABA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BF722600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198C1726180>]}
+
+
+============================== 00:20:10.582869 | afd633c4-2503-41c0-bfa7-cab51baf4e09 ==============================
+[0m00:20:10.582869 [info ] [MainThread]: Running with dbt=1.11.12
+[0m00:20:10.582869 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Elisa\\.dbt', 'invocation_command': 'dbt run --select int_citibike__trips_enriched', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Elisa\\Documents\\Portfolio project\\CITIBIKE2526\\CLAUDE dbt_citibike_project\\dbt_citibike\\logs'}
+[0m00:20:11.443097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'afd633c4-2503-41c0-bfa7-cab51baf4e09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DC55F710>]}
+[0m00:20:11.507001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'afd633c4-2503-41c0-bfa7-cab51baf4e09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DCB8E390>]}
+[0m00:20:11.507001 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m00:20:11.850320 [debug] [MainThread]: checksum: f368f5348cf42803b94ef7fb8257ecf3bf9a9a16dd9c8c51fe5172f2dbeb457f, vars: {}, profile: , target: , version: 1.11.12
+[0m00:20:12.057038 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:20:12.057038 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m00:20:12.057038 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:20:12.088937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'afd633c4-2503-41c0-bfa7-cab51baf4e09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DD204B90>]}
+[0m00:20:12.183379 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\manifest.json
+[0m00:20:12.183379 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\semantic_manifest.json
+[0m00:20:12.183379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'afd633c4-2503-41c0-bfa7-cab51baf4e09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DD496510>]}
+[0m00:20:12.183379 [info ] [MainThread]: Found 8 models, 28 data tests, 1 source, 669 macros
+[0m00:20:12.183379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'afd633c4-2503-41c0-bfa7-cab51baf4e09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DD5A4650>]}
+[0m00:20:12.183379 [info ] [MainThread]: 
+[0m00:20:12.199328 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:20:12.199328 [info ] [MainThread]: 
+[0m00:20:12.199328 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m00:20:12.201139 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_local-tempo-493308-m1'
+[0m00:20:12.201139 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:20:13.284477 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_local-tempo-493308-m1_citibike_dataset'
+[0m00:20:13.284477 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:20:14.292075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'afd633c4-2503-41c0-bfa7-cab51baf4e09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198DD12DBB0>]}
+[0m00:20:14.292075 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:20:14.324073 [debug] [Thread-3 (]: Began running node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m00:20:14.324073 [info ] [Thread-3 (]: 1 of 1 START sql table model citibike_dataset.int_citibike__trips_enriched ..... [RUN]
+[0m00:20:14.324073 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.citibike_dbt_2526.int_citibike__trips_enriched'
+[0m00:20:14.324073 [debug] [Thread-3 (]: Began compiling node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m00:20:14.340067 [debug] [Thread-3 (]: Writing injected SQL for node "model.citibike_dbt_2526.int_citibike__trips_enriched"
+[0m00:20:14.356585 [debug] [Thread-3 (]: Writing injected SQL for node "model.citibike_dbt_2526.int_citibike__trips_enriched"
+[0m00:20:14.357427 [debug] [Thread-3 (]: Began executing node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m00:20:14.397559 [debug] [Thread-3 (]: Writing runtime sql for node "model.citibike_dbt_2526.int_citibike__trips_enriched"
+[0m00:20:14.398561 [debug] [Thread-3 (]: On model.citibike_dbt_2526.int_citibike__trips_enriched: /* {"app": "dbt", "dbt_version": "1.11.12", "profile_name": "citibike_dbt_2526", "target_name": "dev", "node_id": "model.citibike_dbt_2526.int_citibike__trips_enriched"} */
+
+  
+    
+
+    create or replace table `local-tempo-493308-m1`.`citibike_dataset`.`int_citibike__trips_enriched`
+      
+    partition by timestamp_trunc(started_at, month)
+    cluster by start_station_id, rider_type
+
+    
+    OPTIONS()
+    as (
+      
+
+with  __dbt__cte__int_citibike__trips_deduplicated as (
+
+
+-- Les exports mensuels concaténés peuvent se chevaucher sur les bornes
+-- de date : on garde une seule ligne par ride_id.
+
+with trips as (
+
+    select * from `local-tempo-493308-m1`.`citibike_dataset`.`stg_citibike__trips`
+
+),
+
+deduplicated as (
+
+    select
+        *,
+        row_number() over (
+            partition by ride_id
+            order by started_at
+        ) as rn
+
+    from trips
+
+)
+
+select * except(rn)
+from deduplicated
+where rn = 1
+), trips as (
+
+    select * from __dbt__cte__int_citibike__trips_deduplicated
+
+),
+
+enriched as (
+
+    select
+        *,
+
+        timestamp_diff(ended_at, started_at, second) / 60.0   as trip_duration_minutes,
+
+        (start_station_id = end_station_id)                   as is_round_trip,
+
+        extract(dayofweek from started_at)                     as start_day_of_week,
+        extract(hour from started_at)                           as start_hour,
+
+        case
+            when extract(dayofweek from started_at) in (1, 7) then 'weekend'
+            else 'weekday'
+        end as day_type,
+
+        -- distance haversine approximative en km
+        2 * 6371 * asin(
+            sqrt(
+                pow(sin((radians(end_lat) - radians(start_lat)) / 2), 2) +
+                cos(radians(start_lat)) * cos(radians(end_lat)) *
+                pow(sin((radians(end_lng) - radians(start_lng)) / 2), 2)
+            )
+        ) as distance_km
+
+    from trips
+
+)
+
+select *
+from enriched
+-- on écarte les trajets aberrants (erreurs de capteur/station coupée)
+where trip_duration_minutes > 0
+  and trip_duration_minutes < 1440
+    );
+  
+[0m00:20:14.399565 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:20:15.888989 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=local-tempo-493308-m1&j=bq:US:8badeea1-63f5-4205-b9cd-da6486eed481&page=queryresults
+[0m00:20:16.181550 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=local-tempo-493308-m1&j=bq:US:8badeea1-63f5-4205-b9cd-da6486eed481&page=queryresults
+[0m00:20:16.181550 [debug] [Thread-3 (]: Database Error in model int_citibike__trips_enriched (models\intermediate\int_citibike__trips_enriched.sql)
+  Function not found: radians at [70:26]
+  compiled code at target\run\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+[0m00:20:16.181550 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'afd633c4-2503-41c0-bfa7-cab51baf4e09', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198C1CD8410>]}
+[0m00:20:16.197257 [error] [Thread-3 (]: 1 of 1 ERROR creating sql table model citibike_dataset.int_citibike__trips_enriched  [[31mERROR[0m in 1.86s]
+[0m00:20:16.198111 [debug] [Thread-3 (]: Finished running node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m00:20:16.198632 [debug] [Thread-9 (]: Marking all children of 'model.citibike_dbt_2526.int_citibike__trips_enriched' to be skipped because of status 'error'.  Reason: Database Error in model int_citibike__trips_enriched (models\intermediate\int_citibike__trips_enriched.sql)
+  Function not found: radians at [70:26]
+  compiled code at target\run\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql.
+[0m00:20:16.200431 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:20:16.226299 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:20:16.226299 [debug] [MainThread]: Connection 'list_local-tempo-493308-m1' was properly closed.
+[0m00:20:16.226299 [debug] [MainThread]: Connection 'list_local-tempo-493308-m1_citibike_dataset' was properly closed.
+[0m00:20:16.226299 [debug] [MainThread]: Connection 'model.citibike_dbt_2526.int_citibike__trips_enriched' was properly closed.
+[0m00:20:16.226299 [info ] [MainThread]: 
+[0m00:20:16.226299 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.03 seconds (4.03s).
+[0m00:20:16.226299 [debug] [MainThread]: Command end result
+[0m00:20:16.268935 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\manifest.json
+[0m00:20:16.271374 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\semantic_manifest.json
+[0m00:20:16.271374 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\run_results.json
+[0m00:20:16.271374 [info ] [MainThread]: 
+[0m00:20:16.271374 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m00:20:16.271374 [info ] [MainThread]: 
+[0m00:20:16.271374 [error] [MainThread]: [31mFailure in model int_citibike__trips_enriched (models\intermediate\int_citibike__trips_enriched.sql)[0m
+[0m00:20:16.279578 [error] [MainThread]:   Database Error in model int_citibike__trips_enriched (models\intermediate\int_citibike__trips_enriched.sql)
+  Function not found: radians at [70:26]
+  compiled code at target\run\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+[0m00:20:16.279578 [info ] [MainThread]: 
+[0m00:20:16.279578 [info ] [MainThread]:   compiled code at target\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+[0m00:20:16.279578 [info ] [MainThread]: 
+[0m00:20:16.279578 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m00:20:16.279578 [debug] [MainThread]: Command `dbt run` failed at 00:20:16.279578 after 5.79 seconds
+[0m00:20:16.279578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BF722600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198BEE229C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000198C2A46000>]}
+[0m00:20:16.279578 [debug] [MainThread]: Flushing usage events
+[0m00:20:16.935981 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:16:17.780784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D95319B890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D95319ADB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D9531990A0>]}
+
+
+============================== 16:16:17.786320 | af6b36fd-28dd-4d3d-8505-27f9adf80fa2 ==============================
+[0m16:16:17.786320 [info ] [MainThread]: Running with dbt=1.11.12
+[0m16:16:17.786320 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Elisa\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\Elisa\\Documents\\Portfolio project\\CITIBIKE2526\\CLAUDE dbt_citibike_project\\dbt_citibike\\logs'}
+[0m16:16:17.913485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'af6b36fd-28dd-4d3d-8505-27f9adf80fa2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D951FD4BF0>]}
+[0m16:16:17.992882 [debug] [MainThread]: Set downloads directory='C:\Users\Elisa\AppData\Local\Temp\dbt-downloads-dyzzkr0y'
+[0m16:16:17.992882 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:16:18.341314 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:16:18.342585 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:16:18.658519 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:16:18.658519 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:16:21.170704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158E2C2BE60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158E0AA23F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158E1119400>]}
+
+
+============================== 16:16:21.179282 | 081c2922-c636-452a-8170-56707c070957 ==============================
+[0m16:16:21.179282 [info ] [MainThread]: Running with dbt=1.11.12
+[0m16:16:21.179282 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Elisa\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --select int_citibike__trips_enriched', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Elisa\\Documents\\Portfolio project\\CITIBIKE2526\\CLAUDE dbt_citibike_project\\dbt_citibike\\logs'}
+[0m16:16:21.356176 [info ] [MainThread]: Installed from version 1.4.1
+[0m16:16:21.356176 [info ] [MainThread]: Up to date!
+[0m16:16:21.356176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'af6b36fd-28dd-4d3d-8505-27f9adf80fa2', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D952FAE0C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D954626180>]}
+[0m16:16:21.356176 [debug] [MainThread]: Command `cli deps` succeeded at 16:16:21.356176 after 1.87 seconds
+[0m16:16:21.356176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D952CF2840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D952CF37A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D952CF17C0>]}
+[0m16:16:21.356176 [debug] [MainThread]: Flushing usage events
+[0m16:16:22.103066 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:16:22.740232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '081c2922-c636-452a-8170-56707c070957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158FBDE8AD0>]}
+[0m16:16:22.796404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '081c2922-c636-452a-8170-56707c070957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158FBE74680>]}
+[0m16:16:22.796404 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:16:23.196203 [debug] [MainThread]: checksum: f368f5348cf42803b94ef7fb8257ecf3bf9a9a16dd9c8c51fe5172f2dbeb457f, vars: {}, profile: , target: , version: 1.11.12
+[0m16:16:23.438725 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:16:23.438725 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:16:23.438725 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:16:23.479158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '081c2922-c636-452a-8170-56707c070957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158FDED6990>]}
+[0m16:16:23.568579 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\manifest.json
+[0m16:16:23.570583 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\semantic_manifest.json
+[0m16:16:23.586741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '081c2922-c636-452a-8170-56707c070957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158FE8C7110>]}
+[0m16:16:23.586741 [info ] [MainThread]: Found 8 models, 28 data tests, 1 source, 669 macros
+[0m16:16:23.586741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '081c2922-c636-452a-8170-56707c070957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158FDEAC140>]}
+[0m16:16:23.590315 [info ] [MainThread]: 
+[0m16:16:23.590315 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:16:23.590315 [info ] [MainThread]: 
+[0m16:16:23.590315 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:16:23.593109 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_local-tempo-493308-m1'
+[0m16:16:23.593109 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:16:24.677606 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_local-tempo-493308-m1_citibike_dataset'
+[0m16:16:24.677606 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:16:25.639946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '081c2922-c636-452a-8170-56707c070957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158FC525AF0>]}
+[0m16:16:25.639946 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:16:25.676635 [debug] [Thread-3 (]: Began running node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m16:16:25.676939 [info ] [Thread-3 (]: 1 of 1 START sql table model citibike_dataset.int_citibike__trips_enriched ..... [RUN]
+[0m16:16:25.677706 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.citibike_dbt_2526.int_citibike__trips_enriched'
+[0m16:16:25.677706 [debug] [Thread-3 (]: Began compiling node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m16:16:25.688168 [debug] [Thread-3 (]: Writing injected SQL for node "model.citibike_dbt_2526.int_citibike__trips_enriched"
+[0m16:16:25.698977 [debug] [Thread-3 (]: Writing injected SQL for node "model.citibike_dbt_2526.int_citibike__trips_enriched"
+[0m16:16:25.698977 [debug] [Thread-3 (]: Began executing node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m16:16:25.740370 [debug] [Thread-3 (]: Writing runtime sql for node "model.citibike_dbt_2526.int_citibike__trips_enriched"
+[0m16:16:25.741373 [debug] [Thread-3 (]: On model.citibike_dbt_2526.int_citibike__trips_enriched: /* {"app": "dbt", "dbt_version": "1.11.12", "profile_name": "citibike_dbt_2526", "target_name": "dev", "node_id": "model.citibike_dbt_2526.int_citibike__trips_enriched"} */
+
+  
+    
+
+    create or replace table `local-tempo-493308-m1`.`citibike_dataset`.`int_citibike__trips_enriched`
+      
+    partition by timestamp_trunc(started_at, month)
+    cluster by start_station_id, rider_type
+
+    
+    OPTIONS()
+    as (
+      
+
+with  __dbt__cte__int_citibike__trips_deduplicated as (
+
+
+-- Les exports mensuels concaténés peuvent se chevaucher sur les bornes
+-- de date : on garde une seule ligne par ride_id.
+
+with trips as (
+
+    select * from `local-tempo-493308-m1`.`citibike_dataset`.`stg_citibike__trips`
+
+),
+
+deduplicated as (
+
+    select
+        *,
+        row_number() over (
+            partition by ride_id
+            order by started_at
+        ) as rn
+
+    from trips
+
+)
+
+select * except(rn)
+from deduplicated
+where rn = 1
+), trips as (
+
+    select * from __dbt__cte__int_citibike__trips_deduplicated
+
+),
+
+enriched as (
+
+    select
+        *,
+
+        timestamp_diff(ended_at, started_at, second) / 60.0   as trip_duration_minutes,
+
+        (start_station_id = end_station_id)                   as is_round_trip,
+
+        extract(dayofweek from started_at)                     as start_day_of_week,
+        extract(hour from started_at)                           as start_hour,
+
+        case
+            when extract(dayofweek from started_at) in (1, 7) then 'weekend'
+            else 'weekday'
+        end as day_type,
+
+        -- distance haversine approximative en km
+        2 * 6371 * asin(
+            sqrt(
+                pow(sin((radians(end_lat) - radians(start_lat)) / 2), 2) +
+                cos(radians(start_lat)) * cos(radians(end_lat)) *
+                pow(sin((radians(end_lng) - radians(start_lng)) / 2), 2)
+            )
+        ) as distance_km
+
+    from trips
+
+)
+
+select *
+from enriched
+-- on écarte les trajets aberrants (erreurs de capteur/station coupée)
+where trip_duration_minutes > 0
+  and trip_duration_minutes < 1440
+    );
+  
+[0m16:16:25.741373 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:16:27.220599 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=local-tempo-493308-m1&j=bq:US:17179dff-4934-40f2-8999-208a0f1eaaaf&page=queryresults
+[0m16:16:27.502610 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=local-tempo-493308-m1&j=bq:US:17179dff-4934-40f2-8999-208a0f1eaaaf&page=queryresults
+[0m16:16:27.513768 [debug] [Thread-3 (]: Database Error in model int_citibike__trips_enriched (models\intermediate\int_citibike__trips_enriched.sql)
+  Function not found: radians at [70:26]
+  compiled code at target\run\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+[0m16:16:27.515778 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '081c2922-c636-452a-8170-56707c070957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158E30584A0>]}
+[0m16:16:27.516971 [error] [Thread-3 (]: 1 of 1 ERROR creating sql table model citibike_dataset.int_citibike__trips_enriched  [[31mERROR[0m in 1.84s]
+[0m16:16:27.516971 [debug] [Thread-3 (]: Finished running node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m16:16:27.516971 [debug] [Thread-9 (]: Marking all children of 'model.citibike_dbt_2526.int_citibike__trips_enriched' to be skipped because of status 'error'.  Reason: Database Error in model int_citibike__trips_enriched (models\intermediate\int_citibike__trips_enriched.sql)
+  Function not found: radians at [70:26]
+  compiled code at target\run\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql.
+[0m16:16:27.516971 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:16:27.549788 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:16:27.549788 [debug] [MainThread]: Connection 'list_local-tempo-493308-m1' was properly closed.
+[0m16:16:27.549788 [debug] [MainThread]: Connection 'list_local-tempo-493308-m1_citibike_dataset' was properly closed.
+[0m16:16:27.549788 [debug] [MainThread]: Connection 'model.citibike_dbt_2526.int_citibike__trips_enriched' was properly closed.
+[0m16:16:27.549788 [info ] [MainThread]: 
+[0m16:16:27.549788 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 3.96 seconds (3.96s).
+[0m16:16:27.549788 [debug] [MainThread]: Command end result
+[0m16:16:27.589387 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\manifest.json
+[0m16:16:27.591390 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\semantic_manifest.json
+[0m16:16:27.596268 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\run_results.json
+[0m16:16:27.596268 [info ] [MainThread]: 
+[0m16:16:27.596268 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:16:27.598900 [info ] [MainThread]: 
+[0m16:16:27.598900 [error] [MainThread]: [31mFailure in model int_citibike__trips_enriched (models\intermediate\int_citibike__trips_enriched.sql)[0m
+[0m16:16:27.598900 [error] [MainThread]:   Database Error in model int_citibike__trips_enriched (models\intermediate\int_citibike__trips_enriched.sql)
+  Function not found: radians at [70:26]
+  compiled code at target\run\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+[0m16:16:27.598900 [info ] [MainThread]: 
+[0m16:16:27.598900 [info ] [MainThread]:   compiled code at target\compiled\citibike_dbt_2526\models\intermediate\int_citibike__trips_enriched.sql
+[0m16:16:27.598900 [info ] [MainThread]: 
+[0m16:16:27.598900 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:16:27.598900 [debug] [MainThread]: Command `dbt run` failed at 16:16:27.598900 after 6.53 seconds
+[0m16:16:27.598900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158E01A6570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158E3FC1AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000158E3FC3F50>]}
+[0m16:16:27.602581 [debug] [MainThread]: Flushing usage events
+[0m16:16:28.243822 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:20:12.239199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4850A4770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F484FFD8E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F484FFE090>]}
+
+
+============================== 16:20:12.243207 | ad0117b1-e082-46e3-84d8-a68db040a63b ==============================
+[0m16:20:12.243207 [info ] [MainThread]: Running with dbt=1.11.12
+[0m16:20:12.243207 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Elisa\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt parse', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Elisa\\Documents\\Portfolio project\\CITIBIKE2526\\CLAUDE dbt_citibike_project\\dbt_citibike\\logs'}
+[0m16:20:13.214170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ad0117b1-e082-46e3-84d8-a68db040a63b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F49F4A3710>]}
+[0m16:20:13.274931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ad0117b1-e082-46e3-84d8-a68db040a63b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F49D01B770>]}
+[0m16:20:13.274931 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:20:13.458890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE01946780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE01505370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE015078C0>]}
+
+
+============================== 16:20:13.464379 | e8d32090-6a4d-4cc4-8376-3c4eb87bb522 ==============================
+[0m16:20:13.464379 [info ] [MainThread]: Running with dbt=1.11.12
+[0m16:20:13.464379 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Elisa\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --select int_citibike__trips_enriched', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Elisa\\Documents\\Portfolio project\\CITIBIKE2526\\CLAUDE dbt_citibike_project\\dbt_citibike\\logs'}
+[0m16:20:13.637049 [debug] [MainThread]: checksum: f368f5348cf42803b94ef7fb8257ecf3bf9a9a16dd9c8c51fe5172f2dbeb457f, vars: {}, profile: , target: , version: 1.11.12
+[0m16:20:13.857510 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:20:13.857510 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:20:13.857510 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:20:13.913838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ad0117b1-e082-46e3-84d8-a68db040a63b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F49F606D50>]}
+[0m16:20:13.915842 [info ] [MainThread]: Performance info: C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\perf_info.json
+[0m16:20:14.012270 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\manifest.json
+[0m16:20:14.016277 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\semantic_manifest.json
+[0m16:20:14.016277 [debug] [MainThread]: Command `dbt parse` succeeded at 16:20:14.016277 after 1.89 seconds
+[0m16:20:14.016277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F48472C080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F484946690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4849464E0>]}
+[0m16:20:14.016277 [debug] [MainThread]: Flushing usage events
+[0m16:20:14.375805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e8d32090-6a4d-4cc4-8376-3c4eb87bb522', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1A965670>]}
+[0m16:20:14.441269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e8d32090-6a4d-4cc4-8376-3c4eb87bb522', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1C4B6390>]}
+[0m16:20:14.441269 [info ] [MainThread]: Registered adapter: bigquery=1.11.3
+[0m16:20:14.708848 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:20:14.806969 [debug] [MainThread]: checksum: f368f5348cf42803b94ef7fb8257ecf3bf9a9a16dd9c8c51fe5172f2dbeb457f, vars: {}, profile: , target: , version: 1.11.12
+[0m16:20:15.033808 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:20:15.033808 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:20:15.033808 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:20:15.078062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e8d32090-6a4d-4cc4-8376-3c4eb87bb522', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1C66B590>]}
+[0m16:20:15.161399 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\manifest.json
+[0m16:20:15.161399 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\semantic_manifest.json
+[0m16:20:15.182084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e8d32090-6a4d-4cc4-8376-3c4eb87bb522', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1CAC6B40>]}
+[0m16:20:15.182084 [info ] [MainThread]: Found 8 models, 28 data tests, 1 source, 669 macros
+[0m16:20:15.182084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8d32090-6a4d-4cc4-8376-3c4eb87bb522', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1CB50C20>]}
+[0m16:20:15.182084 [info ] [MainThread]: 
+[0m16:20:15.182084 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:20:15.182084 [info ] [MainThread]: 
+[0m16:20:15.182084 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:20:15.182084 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_local-tempo-493308-m1'
+[0m16:20:15.182084 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:20:16.308933 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_local-tempo-493308-m1_citibike_dataset'
+[0m16:20:16.308933 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:20:17.294622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8d32090-6a4d-4cc4-8376-3c4eb87bb522', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1C6689E0>]}
+[0m16:20:17.294622 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:20:17.325523 [debug] [Thread-3 (]: Began running node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m16:20:17.325523 [info ] [Thread-3 (]: 1 of 1 START sql table model citibike_dataset.int_citibike__trips_enriched ..... [RUN]
+[0m16:20:17.325523 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.citibike_dbt_2526.int_citibike__trips_enriched'
+[0m16:20:17.325523 [debug] [Thread-3 (]: Began compiling node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m16:20:17.347506 [debug] [Thread-3 (]: Writing injected SQL for node "model.citibike_dbt_2526.int_citibike__trips_enriched"
+[0m16:20:17.359049 [debug] [Thread-3 (]: Writing injected SQL for node "model.citibike_dbt_2526.int_citibike__trips_enriched"
+[0m16:20:17.359049 [debug] [Thread-3 (]: Began executing node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m16:20:17.404495 [debug] [Thread-3 (]: Writing runtime sql for node "model.citibike_dbt_2526.int_citibike__trips_enriched"
+[0m16:20:17.406498 [debug] [Thread-3 (]: On model.citibike_dbt_2526.int_citibike__trips_enriched: /* {"app": "dbt", "dbt_version": "1.11.12", "profile_name": "citibike_dbt_2526", "target_name": "dev", "node_id": "model.citibike_dbt_2526.int_citibike__trips_enriched"} */
+
+  
+    
+
+    create or replace table `local-tempo-493308-m1`.`citibike_dataset`.`int_citibike__trips_enriched`
+      
+    partition by timestamp_trunc(started_at, month)
+    cluster by start_station_id, rider_type
+
+    
+    OPTIONS()
+    as (
+      
+
+with  __dbt__cte__int_citibike__trips_deduplicated as (
+
+
+-- Les exports mensuels concaténés peuvent se chevaucher sur les bornes
+-- de date : on garde une seule ligne par ride_id.
+
+with trips as (
+
+    select * from `local-tempo-493308-m1`.`citibike_dataset`.`stg_citibike__trips`
+
+),
+
+deduplicated as (
+
+    select
+        *,
+        row_number() over (
+            partition by ride_id
+            order by started_at
+        ) as rn
+
+    from trips
+
+)
+
+select * except(rn)
+from deduplicated
+where rn = 1
+), trips as (
+
+    select * from __dbt__cte__int_citibike__trips_deduplicated
+
+),
+
+enriched as (
+
+    select
+        *,
+
+        timestamp_diff(ended_at, started_at, second) / 60.0   as trip_duration_minutes,
+
+        (start_station_id = end_station_id)                   as is_round_trip,
+
+        extract(dayofweek from started_at)                     as start_day_of_week,
+        extract(hour from started_at)                           as start_hour,
+
+        case
+            when extract(dayofweek from started_at) in (1, 7) then 'weekend'
+            else 'weekday'
+        end as day_type,
+
+        -- distance haversine approximative en km
+        
+
+
+
+    
+
+    2 * 3961 * asin(sqrt(power(sin((acos(-1) * end_lat / 180 - acos(-1) * start_lat / 180) / 2), 2) +
+    cos(acos(-1) * start_lat / 180) * cos(acos(-1) * end_lat / 180) *
+    power(sin((acos(-1) * end_lng / 180 - acos(-1) * start_lng / 180) / 2), 2))) * 1.60934 as distance_km
+
+    from trips
+
+)
+
+select *
+from enriched
+-- on écarte les trajets aberrants (erreurs de capteur/station coupée)
+where trip_duration_minutes > 0
+  and trip_duration_minutes < 1440
+    );
+  
+[0m16:20:17.406498 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:20:18.828759 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=local-tempo-493308-m1&j=bq:US:56522ac4-8658-4f72-921e-cd265708aa18&page=queryresults
+[0m16:20:24.282268 [debug] [Thread-3 (]: SQL status: OK in 5.453 seconds
+[0m16:20:25.325515 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8d32090-6a4d-4cc4-8376-3c4eb87bb522', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE1C4EE8A0>]}
+[0m16:20:25.325515 [info ] [Thread-3 (]: 1 of 1 OK created sql table model citibike_dataset.int_citibike__trips_enriched  [[32mCREATE TABLE (0.0 rows, 697.6 MiB processed)[0m in 8.00s]
+[0m16:20:25.325515 [debug] [Thread-3 (]: Finished running node model.citibike_dbt_2526.int_citibike__trips_enriched
+[0m16:20:25.325515 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:20:25.366127 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:20:25.366127 [debug] [MainThread]: Connection 'list_local-tempo-493308-m1' was properly closed.
+[0m16:20:25.366127 [debug] [MainThread]: Connection 'list_local-tempo-493308-m1_citibike_dataset' was properly closed.
+[0m16:20:25.366127 [debug] [MainThread]: Connection 'model.citibike_dbt_2526.int_citibike__trips_enriched' was properly closed.
+[0m16:20:25.366127 [info ] [MainThread]: 
+[0m16:20:25.366127 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 10.18 seconds (10.18s).
+[0m16:20:25.366127 [debug] [MainThread]: Command end result
+[0m16:20:25.408995 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\manifest.json
+[0m16:20:25.408995 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\semantic_manifest.json
+[0m16:20:25.408995 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Elisa\Documents\Portfolio project\CITIBIKE2526\CLAUDE dbt_citibike_project\dbt_citibike\target\run_results.json
+[0m16:20:25.408995 [info ] [MainThread]: 
+[0m16:20:25.408995 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:20:25.408995 [info ] [MainThread]: 
+[0m16:20:25.408995 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m16:20:25.408995 [debug] [MainThread]: Command `dbt run` succeeded at 16:20:25.408995 after 12.06 seconds
+[0m16:20:25.408995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE01FC7BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE01FC5F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE012DF770>]}
+[0m16:20:25.408995 [debug] [MainThread]: Flushing usage events
+[0m16:20:26.064255 [debug] [MainThread]: An error was encountered while trying to flush usage events

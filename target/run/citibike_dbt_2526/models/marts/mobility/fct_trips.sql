@@ -12,7 +12,7 @@
   
     
 
-    create or replace table `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips__dbt_tmp184458954163`
+    create or replace table `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips__dbt_tmp191252066319`
       
     partition by timestamp_trunc(started_at, month)
     cluster by start_station_id, member_type
@@ -54,7 +54,7 @@ where started_at > (select max(started_at) from `local-tempo-493308-m1`.`citibik
           select as struct
               -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
               array_agg(distinct timestamp_trunc(started_at, month) IGNORE NULLS)
-          from `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips__dbt_tmp184458954163`
+          from `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips__dbt_tmp191252066319`
       );
 
       -- 3. run the merge statement
@@ -63,7 +63,7 @@ where started_at > (select max(started_at) from `local-tempo-493308-m1`.`citibik
     merge into `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips` as DBT_INTERNAL_DEST
         using (
         select
-        * from `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips__dbt_tmp184458954163`
+        * from `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips__dbt_tmp191252066319`
       ) as DBT_INTERNAL_SOURCE
         on FALSE
 
@@ -79,7 +79,7 @@ where started_at > (select max(started_at) from `local-tempo-493308-m1`.`citibik
 ;
 
       -- 4. clean up the temp table
-      drop table if exists `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips__dbt_tmp184458954163`
+      drop table if exists `local-tempo-493308-m1`.`citibike_dataset`.`fct_trips__dbt_tmp191252066319`
 
   
 

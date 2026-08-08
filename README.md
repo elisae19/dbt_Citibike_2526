@@ -143,8 +143,8 @@ Ce projet comprend deux types de tests :
 | `fct_trips` | `ride_id` | `unique`, `not_null` | Grain de la table de faits respecté |
 | | `start_station_id` | `relationships` → `dim_stations.station_id` | Intégrité référentielle départ |
 | | `end_station_id` | `relationships` → `dim_stations.station_id` | Intégrité référentielle arrivée |
-| `agg_trips_daily` | `trips_by_day_id` | `unique`, `not_null` | Clé surrogate (`dbt_utils.generate_surrogate_key`) valide |
-| | *(table)* | `dbt_utils.expression_is_true` (`nb_trips >= 0`) | Garde-fou sur l'agrégat |
+| `agg_trips_daily` | `trips_by_day_id` | `unique`, `not_null` | Clé surrogate (générée par`dbt_utils.generate_surrogate_key`) valide |
+| | *(table)* | `dbt_utils.expression_is_true` (`nb_trips >= 0`) | Contrôle sur l'agrégat |
 | `agg_trips_by_station_hour` | `trips_by_station_hour_id` | `unique`, `not_null` | Clé surrogate valide |
 
 ### Tests singuliers (custom)

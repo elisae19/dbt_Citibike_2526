@@ -277,5 +277,5 @@ citibike2526/
 ├── package-lock.yml                           — version verrouillée de dbt_utils (1.4.1)
 └── README.md
 
-├── profiles.yml                               — non versionné, en local uniquement (voir section 5 et 9)
+└── profiles.yml                               — non versionné, en local uniquement (voir section 5 et 9)
 ```

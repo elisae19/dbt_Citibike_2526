@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: stg_citibike__trips
+    description: Trajets Citibike nettoyés et retypés, une ligne par trajet.
+    columns:
+      - name: ride_id
+        description: Identifiant unique du trajet tel que normalisé dans le modèle staging
+        tests:
+          - unique
+          - not_null
+      - name: rideable_type
+        description: Type de vélo utilisé pour le trajet
+        tests:
+          - accepted_values:
+              values: ['classic_bike', 'electric_bike', 'docked_bike']
+      - name: member_type
+        description: Catégorie d'utilisateur du trajet (membre ou occasionnel)
+        tests:
+          - accepted_values:
+              values: ['member', 'casual']
+      - name: started_at
+        description: Horodatage de début du trajet
+        tests:
+          - not_null
+      - name: ended_at
+        description: Horodatage de fin du trajet
+        tests:
+          - not_null
+      - name: start_lat
+        description: Latitude du point de départ
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 40.4
+              max_value: 41.0
+      - name: end_lat
+        description: Latitude du point d'arrivée
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 40.4
+              max_value: 41.0

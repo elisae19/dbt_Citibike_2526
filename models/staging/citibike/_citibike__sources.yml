@@ -1,0 +1,37 @@
+version: 2
+sources:
+  - name: citibike_dbt_2526
+    schema: citibike_dataset
+    tables:
+      - name: "{{ 'Citibike2526' if target.name == 'prod' else 'dev_Citibike2526' }}"
+        description: >
+          Table brute Citibike NYC, juillet 2025 à juin 2026, concaténation
+          des exports mensuels, chargée depuis GCS vers BigQuery.
+        #loaded_at_field: started_at
+        #freshness:
+        #  warn_after: {count: 45, period: day}
+        #  error_after: {count: 60, period: day}
+        columns:
+          - name: ride_id
+            description: Identifiant unique du trajet.
+            tests:
+              - unique
+              - not_null
+          - name: started_at
+            description: Heure de début du trajet.
+            tests:
+              - not_null
+          - name: ended_at
+            description: Heure de fin du trajet.
+            tests:
+              - not_null
+          - name: member_casual
+            description: Type d'utilisateur (membre ou occasionnel).
+            tests:
+              - accepted_values:
+                  values: ['member', 'casual']
+          - name: rideable_type
+            description: Type de vélo utilisé.
+            tests:
+              - accepted_values:
+                  values: ['classic_bike', 'electric_bike', 'docked_bike']

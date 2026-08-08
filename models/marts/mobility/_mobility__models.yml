@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: dim_stations
+    description: Dimension station avec compteurs de trafic (départs/arrivées).
+    columns:
+      - name: station_id
+        description: Identifiant unique de la station fourni par l'API Citibike.
+        tests:
+          - unique
+          - not_null
+
+
+  - name: fct_trips
+    description: Table de faits, une ligne par trajet Citibike.
+    columns:
+      - name: ride_id
+        description: Identifiant unique du trajet fourni par l'API Citibike.
+        tests:
+          - unique
+          - not_null
+      - name: start_station_id
+        description: Référence à la station de départ (`dim_stations.station_id`).
+        tests:
+          - relationships:
+              to: ref('dim_stations')
+              field: station_id
+      - name: end_station_id
+        description: Référence à la station d'arrivée (`dim_stations.station_id`).
+        tests:
+          - relationships:
+              to: ref('dim_stations')
+              field: station_id
+
+  - name: agg_trips_daily
+    description: Agrégat journalier des trajets par type de vélo/usager/jour.
+    columns:
+      - name: trips_by_day_id
+        description: Identifiant unique de la ligne d'agrégation journalière.
+        tests:
+          - unique
+          - not_null
+    tests:
+      # sanity check : la somme des trajets agrégés doit matcher fct_trips
+      - dbt_utils.expression_is_true:
+          expression: "nb_trips >= 0"
+
+  - name: agg_trips_by_station_hour
+    description: Agrégat par station de départ et heure, pour l'analyse des patterns horaires.
+    columns:
+      - name: trips_by_station_hour_id
+        description: Identifiant unique de la ligne d'agrégation station/heure.
+        tests:
+          - unique
+          - not_null

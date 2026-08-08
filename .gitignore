@@ -1,0 +1,6 @@
+*.log
+logs/
+target/
+manifest.json
+dbt_packages/
+dbt_internal_packages/

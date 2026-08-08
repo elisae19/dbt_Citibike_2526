@@ -1,0 +1,67 @@
+name: dbt CI
+
+# Se déclenche sur chaque pull request vers main, et optionnellement sur push
+# direct sur main (utile en solo, quand tu ne passes pas toujours par une PR).
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  dbt-build:
+    runs-on: ubuntu-latest
+
+    # Toutes les variables sensibles viennent des GitHub Secrets du repo
+    # (Settings > Secrets and variables > Actions), jamais en clair ici.
+    env:
+      DBT_PROFILES_DIR: ./ci
+      BIGQUERY_KEYFILE_JSON: ${{ secrets.BIGQUERY_KEYFILE_JSON }}
+      BIGQUERY_PROJECT: ${{ secrets.BIGQUERY_PROJECT }}
+      BIGQUERY_DATASET: citibike_dataset
+
+    steps:
+      - name: Checkout du repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer dbt-bigquery
+        run: pip install dbt-bigquery
+
+      - name: Reconstituer la clé de service account BigQuery
+        run: echo "$BIGQUERY_KEYFILE_JSON" > /tmp/bq-keyfile.json
+
+      - name: Générer un profiles.yml pour la CI
+        run: |
+          mkdir -p ci
+          cat <<EOF > ci/profiles.yml
+          citibike_dbt_2526:
+            target: dev
+            outputs:
+              dev:
+                type: bigquery
+                method: service-account
+                project: ${BIGQUERY_PROJECT}
+                dataset: ${BIGQUERY_DATASET}
+                keyfile: /tmp/bq-keyfile.json
+                threads: 4
+                location: US
+              prod:
+                type: bigquery
+                method: service-account
+                project: ${BIGQUERY_PROJECT}
+                dataset: ${BIGQUERY_DATASET}
+                keyfile: /tmp/bq-keyfile.json
+                threads: 4
+                location: US
+          EOF
+
+      - name: dbt deps
+        run: dbt deps
+
+      - name: dbt build (run + test)
+        run: dbt build --target dev

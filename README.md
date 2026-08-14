@@ -198,7 +198,7 @@ citibike_dbt_2526:
 
 ### Environnements
 Les environnements développement et production pointent vers le **même dataset BigQuery**.
-La bascule se fait uniquement sur le nom de la table source, via `target.name` dans `_citibike__sources.yml` et repris dans `stg_citibike__trips.sql` :
+La bascule se fait sur le nom de la table source dans `stg_citibike__trips.sql` :
 
 ```sql
 {{ source('citibike_dbt_2526', 'Citibike2526') if target.name == 'prod' else source('citibike_dbt_2526', 'dev_Citibike2526') }}

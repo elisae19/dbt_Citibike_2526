@@ -17,7 +17,7 @@ with starts as (
         start_lng           as lng,
         started_at           as observed_at
 
-    from {{ ref('int_citibike__trips_deduplicated') }}
+    from {{ ref('int_citibike__trips_filter') }}
 
 ),
 
@@ -30,7 +30,7 @@ ends as (
         end_lng             as lng,
         ended_at             as observed_at
 
-    from {{ ref('int_citibike__trips_deduplicated') }}
+    from {{ ref('int_citibike__trips_filter') }}
 
 ),
 

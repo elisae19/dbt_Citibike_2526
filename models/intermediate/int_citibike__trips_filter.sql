@@ -26,15 +26,27 @@ deduplicated as (
 
 ),
 
--- La CTE suivante n'est pas utilisée dans le modèle final, elle sert juste à tester qu'il n'y a pas de doublons
-deduplicate_test as (
+-- Sert à filtrer les trajets hors de la période juillet 2025 à juin 2026
+filter_date as (
 
     select * from deduplicated
-    where rn > 1
+    where started_at between '2025-07-01' and '2026-06-30'
+
+),
+
+
+-- Sert à filtrer les trajets qui ne sont pas dans la zone de NYC (ex: New Jersey, New Haven, etc.)
+filter_nyc as (
+
+    select * from filter_date
+    where start_lat between 40.4 and 41.0
+      and end_lat between 40.4 and 41.0
+      and start_lng between -74.3 and -73.6
+      and end_lng between -74.3 and -73.6
 
 )
 
 select * except(rn)
-from deduplicated
+from filter_nyc
 where rn = 1
 

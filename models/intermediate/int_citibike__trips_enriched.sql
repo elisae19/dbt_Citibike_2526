@@ -7,7 +7,7 @@
 
 with trips as (
 
-    select * from {{ ref('int_citibike__trips_deduplicated') }}
+    select * from {{ ref('int_citibike__trips_filter') }}
 
 ),
 

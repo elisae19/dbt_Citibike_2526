@@ -7,8 +7,12 @@ models:
       - name: ride_id
         description: Identifiant unique du trajet tel que normalisé dans le modèle staging
         tests:
-          - unique
-          - not_null
+          - not_null:
+              config:
+                severity: warn
+          - unique:
+              config:
+                severity: warn
       - name: rideable_type
         description: Type de vélo utilisé pour le trajet
         tests:
@@ -22,20 +26,28 @@ models:
       - name: started_at
         description: Horodatage de début du trajet
         tests:
-          - not_null
+          - not_null:
+              config:
+                severity: warn
       - name: ended_at
         description: Horodatage de fin du trajet
         tests:
-          - not_null
+          - not_null:
+              config:
+                severity: warn
       - name: start_lat
         description: Latitude du point de départ
         tests:
           - dbt_utils.accepted_range:
               min_value: 40.4
               max_value: 41.0
+              config:
+                severity: warn
       - name: end_lat
         description: Latitude du point d'arrivée
         tests:
           - dbt_utils.accepted_range:
               min_value: 40.4
               max_value: 41.0
+              config:
+                severity: warn

@@ -6,7 +6,7 @@ Liste non exhaustive des pratiques dbt utilisées dans ce projet :
 - Une architecture en couches (staging → intermediate → marts) 
 - Import de source depuis BigQuery
 - Tests génériques dbt-utils et tests custom unitaires
-- Déduplication via un modèle éphémère
+- Déduplication et filtrage (période, zone géographique) via un modèle éphémère
 - Enrichissement métier
 - Modèles d'agrégation pour faciliter l'analyse BI
 
@@ -55,7 +55,7 @@ staging/citibike/
 └── stg_citibike__trips              (view)   — nettoyage / retypage, 1 ligne par trajet
 
 intermediate/
-├── int_citibike__trips_deduplicated (ephemeral) — dédoublonnage sur ride_id
+├── int_citibike__trips_filter       (ephemeral) — dédoublonnage sur ride_id + filtre période (juil. 2025 - juin 2026) + filtre zone NYC
 ├── int_citibike__trips_enriched     (table)     — durée, distance, calendrier, filtrage des aberrations
 └── int_citibike__stations_unified   (table)     — dimension station dédupliquée
 
@@ -71,9 +71,9 @@ marts/mobility/
 ```mermaid
 flowchart LR
     SRC["source: citibike_dbt_2526<br/>(Citibike2526 / dev_Citibike2526)"] --> STG["stg_citibike__trips"]
-    STG --> DEDUP["int_citibike__trips_deduplicated<br/>(ephemeral)"]
-    DEDUP --> ENRICHED["int_citibike__trips_enriched"]
-    DEDUP --> STATIONS["int_citibike__stations_unified"]
+    STG --> FILTER["int_citibike__trips_filter<br/>(ephemeral)"]
+    FILTER --> ENRICHED["int_citibike__trips_enriched"]
+    FILTER --> STATIONS["int_citibike__stations_unified"]
 
     ENRICHED --> FCT["fct_trips"]
     STATIONS --> DIM["dim_stations"]
@@ -84,7 +84,7 @@ flowchart LR
 ```
 
 Note :
-`int_citibike__trips_deduplicated` est **éphémère** : il n'est jamais matérialisé en base. dbt l'inline en CTE dans chaque modèle qui le référence (`int_citibike__trips_enriched` et `int_citibike__stations_unified`).
+`int_citibike__trips_filter` est **éphémère** : il n'est jamais matérialisé en base. dbt l'inline en CTE dans chaque modèle qui le référence (`int_citibike__trips_enriched` et `int_citibike__stations_unified`). Il enchaîne trois étapes : déduplication par `ride_id`, filtre sur la période juillet 2025 - juin 2026 (`started_at`), puis filtre sur la zone géographique de NYC (`start_lat/lng`, `end_lat/lng`).
 
 ---
 
@@ -100,7 +100,7 @@ Note :
 
 | Modèle | Matérialisation | Rôle |
 |---|---|---|
-| `int_citibike__trips_deduplicated` | `ephemeral` | Déduplique par `ride_id` (garde la ligne la plus ancienne via `row_number()` sur `started_at`). |
+| `int_citibike__trips_filter` | `ephemeral` | Déduplique par `ride_id` (garde la ligne la plus ancienne via `row_number()` sur `started_at`), puis filtre les trajets hors période juillet 2025 - juin 2026 (`started_at`) et hors zone NYC (`start_lat`/`end_lat` entre 40.4 et 41.0, `start_lng`/`end_lng` entre -74.3 et -73.6). |
 | `int_citibike__trips_enriched` | `table`, clustered sur `start_station_id, member_type` | Calcule `trip_duration_minutes`, `is_round_trip`, `start_day_of_week`, `start_hour`, `day_type` (weekday/weekend) et `distance_km` (haversine_distance via `dbt_utils`). Filtre les trajets à durées aberrantes (durée  ≤ 0 ou ≥ 1440 min).
 | `int_citibike__stations_unified` | `table` | Regroupe les stations de départ et d'arrivée, garde par `station_id` l'observation lat/lng la plus récente (les coordonnées pouvant légèrement dériver dans le temps pour une même station). |
 
@@ -125,16 +125,19 @@ Ce projet comprend deux types de tests :
 
 | Modèle | Colonne | Test | Objectif |
 |---|---|---|---|
-| `source: Citibike2526 / dev_Citibike2526` | `ride_id` | `unique`, `not_null` | Identifiant unique par trajet source |
-| | `started_at` | `not_null` | Heure de départ obligatoire |
-| | `ended_at` | `not_null` | Heure d'arrivée obligatoire |
+| `source: dev_Citibike2526` (déclarée séparément) | `ride_id` | `not_null`, `unique` ⚠️ warn | Identifiant unique par trajet source |
+| | `started_at` | `not_null` ⚠️ warn | Heure de départ obligatoire |
+| | `ended_at` | `not_null` ⚠️ warn | Heure d'arrivée obligatoire |
 | | `member_casual` | `accepted_values` (`member`, `casual`) | Catégorie d'usager valide |
 | | `rideable_type` | `accepted_values` (`classic_bike`, `electric_bike`, `docked_bike`) | Type de vélo valide |
-| `stg_citibike__trips` | `ride_id` | `unique`, `not_null` | Contrôle du maintien de l'identifiant unique sur la source |
+| `source: Citibike2526` (déclarée séparément) | `ride_id`, `started_at`, `ended_at`, `member_casual`, `rideable_type` | mêmes tests que `dev_Citibike2526` | Idem, appliqué à la table prod |
+| `stg_citibike__trips` | `ride_id` | `not_null`, `unique` ⚠️ warn | Contrôle du maintien de l'identifiant unique sur la source |
 | | `rideable_type` | `accepted_values` | Type de vélo valides sur la source |
 | | `member_type` | `accepted_values` | Idem après renommage de `member_casual` |
-| | `started_at` / `ended_at` | `not_null` | Idem après cast en `timestamp` |
-| | `start_lat` / `end_lat` | `dbt_utils.accepted_range` (40.4 à 41.0) | Coordonnées correspondant à la zone NYC, détection des erreurs GPS aberrantes |
+| | `started_at` / `ended_at` | `not_null` ⚠️ warn | Idem après cast en `timestamp` |
+| | `start_lat` / `end_lat` | `dbt_utils.accepted_range` (40.4 à 41.0) ⚠️ warn | Coordonnées correspondant à la zone NYC, détection des erreurs GPS aberrantes |
+
+> ⚠️ warn : ces tests sont configurés en `severity: warn` (ils remontent un avertissement sans faire échouer le build). La source brute peut en effet contenir des lignes imparfaites (doublons, valeurs nulles, trajets hors période ou hors zone NYC) ; c'est justement le rôle du modèle `int_citibike__trips_filter` en aval de dédupliquer et filtrer ces trajets avant `int_citibike__trips_enriched` et `int_citibike__stations_unified`.
 | `int_citibike__trips_enriched` | `ride_id` | `unique`, `not_null` | Vérifie qu'il n'y a pas de doublon introduit par les jointures/enrichissements |
 | | `trip_duration_minutes` | `dbt_utils.accepted_range` (0 à 1440) | Cohérence avec le filtre appliqué dans le modèle (durée strictement positive et < 24h) |
 | | `start_station_id` | `relationships` → `int_citibike__stations_unified.station_id` | Intégrité référentielle vers la dimension station |
@@ -148,7 +151,7 @@ Ce projet comprend deux types de tests :
 | `agg_trips_by_station_hour` | `trips_by_station_hour_id` | `unique`, `not_null` | Clé surrogate valide |
 
 ### Tests singuliers (custom)
-Ces deux tests jouent le rôle de **test de cohérence inter-couches** (mart d'agrégation vs table de faits), en complément des tests génériques qui, eux, valident chaque colonne indépendamment.
+Ces deux tests jouent le rôle de **test de cohérence inter-couches** (mart d'agrégation vs table de faits), en complément des tests génériques qui valident chaque colonne indépendamment.
 
 | Fichier | Rôle |
 |---|---|
@@ -203,7 +206,9 @@ La bascule se fait sur le nom de la table source dans `stg_citibike__trips.sql` 
 ```sql
 {{ source('citibike_dbt_2526', 'Citibike2526') if target.name == 'prod' else source('citibike_dbt_2526', 'dev_Citibike2526') }}
 ```
-Si `target.name == 'prod'` on utilise la table `Citibike2526`, sinon (dev) on utilise la table `dev_Citibike2526`
+Si `target.name == 'prod'` on utilise la table `Citibike2526`, sinon (dev) on utilise la table `dev_Citibike2526`.
+
+Dans `_citibike__sources.yml`, les deux tables (`dev_Citibike2526` et `Citibike2526`) sont désormais déclarées explicitement comme deux sources distinctes, chacune avec son propre jeu de tests génériques (auparavant, une seule table était déclarée dynamiquement via `target.name` dans le YAML).
 
 
 ---
@@ -259,7 +264,7 @@ citibike2526/
 │   │   └── stg_citibike__trips.sql            — vue de nettoyage / retypage
 │   ├── intermediate/
 │   │   ├── _citibike__intermediate__models.yml
-│   │   ├── int_citibike__trips_deduplicated.sql   — ephemeral, dédoublonnage par ride_id
+│   │   ├── int_citibike__trips_filter.sql         — ephemeral, dédoublonnage par ride_id + filtre période/zone NYC
 │   │   ├── int_citibike__trips_enriched.sql       — table, enrichissement + filtrage
 │   │   └── int_citibike__stations_unified.sql     — table, dimension station dédupliquée
 │   └── marts/mobility/

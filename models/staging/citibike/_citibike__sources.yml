@@ -42,7 +42,7 @@ sources:
                   values: ['classic_bike', 'electric_bike', 'docked_bike']
       - name: Citibike2526
         description:
-          Table brute Citibike NYC, juillet 2025 à juin 2026, concaténation
+          Table prod Citibike NYC, juillet 2025 à juin 2026, concaténation
           des exports mensuels, chargée depuis GCS vers BigQuery.
         #loaded_at_field: started_at
         #freshness:

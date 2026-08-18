@@ -1,6 +1,8 @@
-# Citibike2526
-
+# Citibike2526 
+## - par Elisa Elleuch
 Ce projet de portfolio dbt en Analytics Engineering a pour but de transformer les données publiques Citibike NYC de juillet 2025 à juin 2026.
+
+Pour voir le dashboard lié à ce projet : https://app.notion.com/p/Dashboard-NYC-Citibike-de-juillet-2025-juin-2026-3bfac3d1ad758050b74cd2bc6ec912ea
 
 Liste non exhaustive des pratiques dbt utilisées dans ce projet :
 - Une architecture en couches (staging → intermediate → marts) 
@@ -14,6 +16,7 @@ Liste non exhaustive des pratiques dbt utilisées dans ce projet :
 
 ## Table des matières
 - [Citibike2526](#citibike2526)
+  - [- par Elisa Elleuch](#--par-elisa-elleuch)
   - [Table des matières](#table-des-matières)
   - [1. Stack](#1-stack)
   - [2. Architecture des modèles](#2-architecture-des-modèles)

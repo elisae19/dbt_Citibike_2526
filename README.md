@@ -139,8 +139,6 @@ Ce projet comprend deux types de tests :
 | | `member_type` | `accepted_values` | Idem après renommage de `member_casual` |
 | | `started_at` / `ended_at` | `not_null` ⚠️ warn | Idem après cast en `timestamp` |
 | | `start_lat` / `end_lat` | `dbt_utils.accepted_range` (40.4 à 41.0) ⚠️ warn | Coordonnées correspondant à la zone NYC, détection des erreurs GPS aberrantes |
-
-> ⚠️ warn : ces tests sont configurés en `severity: warn` (ils remontent un avertissement sans faire échouer le build). La source brute peut en effet contenir des lignes imparfaites (doublons, valeurs nulles, trajets hors période ou hors zone NYC) ; c'est justement le rôle du modèle `int_citibike__trips_filter` en aval de dédupliquer et filtrer ces trajets avant `int_citibike__trips_enriched` et `int_citibike__stations_unified`.
 | `int_citibike__trips_enriched` | `ride_id` | `unique`, `not_null` | Vérifie qu'il n'y a pas de doublon introduit par les jointures/enrichissements |
 | | `trip_duration_minutes` | `dbt_utils.accepted_range` (0 à 1440) | Cohérence avec le filtre appliqué dans le modèle (durée strictement positive et < 24h) |
 | | `start_station_id` | `relationships` → `int_citibike__stations_unified.station_id` | Intégrité référentielle vers la dimension station |
@@ -152,6 +150,7 @@ Ce projet comprend deux types de tests :
 | `agg_trips_daily` | `trips_by_day_id` | `unique`, `not_null` | Clé surrogate (générée par`dbt_utils.generate_surrogate_key`) valide |
 | | *(table)* | `dbt_utils.expression_is_true` (`nb_trips >= 0`) | Contrôle sur l'agrégat |
 | `agg_trips_by_station_hour` | `trips_by_station_hour_id` | `unique`, `not_null` | Clé surrogate valide |
+> ⚠️ warn : ces tests sont configurés en `severity: warn` (ils remontent un avertissement sans faire échouer le build). La source brute peut en effet contenir des lignes imparfaites (doublons, valeurs nulles, trajets hors période ou hors zone NYC) ; c'est justement le rôle du modèle `int_citibike__trips_filter` en aval de dédupliquer et filtrer ces trajets avant `int_citibike__trips_enriched` et `int_citibike__stations_unified`.
 
 ### Tests singuliers (custom)
 Ces deux tests jouent le rôle de **test de cohérence inter-couches** (mart d'agrégation vs table de faits), en complément des tests génériques qui valident chaque colonne indépendamment.
